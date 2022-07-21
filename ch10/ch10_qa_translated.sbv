@@ -253,325 +253,414 @@ You want to check it as answered?
 Answered
 
 0:03:17.451,0:03:19.371
+下一个问题
 For our next question
 
 0:03:19.371,0:03:23.951
+请问你会推荐先学习使用哪些工具？
 What are some of the tools you'd
 prioritize learning first?
 
 0:03:23.951,0:03:29.551
+也许我们可以一块回答？是的
 - Maybe we can all go through and
 give our opinion on this? + Yeah
 
 0:03:29.551,0:03:31.713
+优先学习的工具？
 Tools to prioritize learning first?
 
 0:03:31.713,0:03:36.451
+我认为学好你的编辑器就够了，它功能全面
 I think learning your editor well,
 just serves you in all capacities
 
 0:03:36.511,0:03:40.511
+能够高效编辑文件
 like being efficient at editing files,
 is just like a majority of
 
 0:03:40.511,0:03:45.041
+大部分时间你会把时间花在这上面
 what you're going to spend your time doing.
 And in general, just using your
 
 0:03:45.041,0:03:49.211
+总之，多用键盘，少用鼠标
 keyboard more in your mouse less. It means
 that you get to spend more of your
 
 0:03:49.311,0:03:53.751
+这让你花更多时间做有用的事而不是移动（鼠标）
 time doing useful things and
 less of your time moving
 
 0:03:53.751,0:03:56.251
+这就是我首先推荐的工具
 I think that would be my top priority,
 
 0:04:04.511,0:04:06.751
+所以我还要说
 so I would say that for what
 
 0:04:06.760,0:04:09.671
+优先选择什么工具取决于你在做什么
 tool to prioritize will depend
 on what exactly you're doing
 
 0:04:09.671,0:04:16.150
+我认为最关键的是
 I think the core idea is you should try
 to find the types of tasks that you are
 
 0:04:16.151,0:04:18.371
+你应该发现你做的重复性工作
 doing repetitively and so
 
 0:04:18.371,0:04:23.791
+比如你在鼓捣机器学习负载
 if you are doing some sort of like
 machine learning workload and
 
 0:04:24.011,0:04:27.130
+你可以用我们昨天推荐的jupyter notebooks软件等等
 you find yourself using jupyter notebooks,
 like the one we presented
 
 0:04:27.130,0:04:32.560
+相对，用鼠标来干这件事可能不是个好主意
 yesterday, a lot. Then again, using
 a mouse for that might not be
 
 0:04:32.560,0:04:35.830
+你会想要熟悉键盘快捷键
 the best idea and you want to familiarize
 with the keyboard shortcuts
 
 0:04:35.830,0:04:40.750
+与之类似的事情还有很多，你会发现有很多重复性工作
 and pretty much with anything you will
 end up figuring out that there are some
 
 0:04:40.751,0:04:45.611
+你手上有台电脑，去找就行了
 repetitive tasks, and you're running a
 computer, and just trying to figure out
 
 0:04:45.611,0:04:48.311
+哦，可能还有更好的做法
 oh there's probably a better way to do this
 
 0:04:48.431,0:04:50.871
+或许是用终端，或许是用编辑器
 be it a terminal, be it an editor
 
 0:04:51.111,0:04:55.891
+学习使用我们之前谈过的一些工具也会非常有趣
 And it might be really interesting to
 learn to use some of the topics that
 
 0:04:55.900,0:05:01.121
+但是如果这些工具在每日工作中不是那么有用
 we have covered, but if they're not
 extremely useful in a everyday
 
 0:05:01.121,0:05:05.431
+那可能就不值得优先学习它们
 basis then it might not worth prioritizing them
 
 0:05:06.591,0:05:07.451
+关于我们在这门课讨论到的
 out of the topics
 
 0:05:07.531,0:05:11.611
+我个人认为两件最有用的工具就是版本控制和文本编辑器
 covered in this class in my opinion two
 of the most useful things are version
 
 0:05:11.621,0:05:15.220
+我认为这两者有点细微差别
 control and text editors, and I think they're
 a little bit different from each
 
 0:05:15.220,0:05:18.880
+文本编辑器我认为学好了会非常有用
 other, in the sense that text editors I
 think are really useful to learn well
 
 0:05:18.880,0:05:21.970
+但是很有可能出现这样一种情况，在我们学习vim
 but it was probably the case that before
 we started using vim and all its fancy
 
 0:05:21.970,0:05:25.390
+和它黑魔法一般的快捷键之前，你用过其他编辑器
 keyboard shortcuts you had some other
 text editor you were using before and
 
 0:05:25.390,0:05:29.890
+而且用的很舒服，就是效率低了一丢丢
 you could edit text just fine maybe a little
 bit inefficiently whereas I think
 
 0:05:29.890,0:05:33.100
+与之相对，我想版本控制是另一项非常有用的技能
 version control is another really useful
 skill and that's one where if you don't
 
 0:05:33.100,0:05:36.580
+如果你不熟悉这个工具，真的会导致一些问题
 really know the tool properly, it can actually
 lead to some problems like loss
 
 0:05:36.580,0:05:39.490
+比如丢失数据或者只是难以和人们协作
 of data or just inability to collaborate
 properly with people so I
 
 0:05:39.490,0:05:42.730
+所以我认为版本控制是需要首要学习的工具之一
 think version control is one of the first
 things that's worth learning well
 
 0:05:42.730,0:05:46.871
+是的，我同意这个观点
 yeah, I agree with that, I think
 learning a tool like Git is just
 
 0:05:46.871,0:05:49.691
+我认为学习Git这样的工具会让你免于很多将来的烦恼
 gonna save you so much heartache down the line
 
 0:05:49.691,0:05:51.431
+另外还有好处是
 it also, to add on to that
 
 0:05:51.571,0:05:57.310
+在你和他人协作开发时它真的非常非常有用
 It really helps you collaborate with others
 and Anish touched a little bit on GitHub
 
 0:05:57.310,0:06:01.300
+Anish上节课涉及到了Github
 in the last lecture, and just learning
 to use that tool well in order
 
 0:06:01.300,0:06:05.321
+学好这个工具能够让你可以参与进其他人的大型软件项目
 to work on larger software projects
 that other people are working on is
 
 0:06:05.321,0:06:06.431
+这是无价的技能
 an invaluable skill
 
 0:06:10.071,0:06:11.391
+下一个问题
 For our next question
 
 0:06:11.391,0:06:12.871
+请问什么时候我该用Python而不是bash脚本
 when do I use Python versus a
 
 0:06:12.881,0:06:16.051
+或者其他一些语言
 bash script, versus some other language
 
 0:06:16.051,0:06:19.661
+这很难说
 This is tough, because I think this comes
 
 0:06:19.661,0:06:21.631
+我认为这和Jose之前说的一样
 down to what Jose was saying earlier too
 
 0:06:21.771,0:06:23.731
+这真的取决于你正在做什么
 that it really depends on
 what you're trying to do
 
 0:06:23.731,0:06:27.155
+对我来说，特别是bash脚本
 For me, I think for bash scripts in particular
 
 0:06:27.155,0:06:28.791
+bash是用来自动运行一系列命令的
 bash scripts are for
 
 0:06:28.891,0:06:33.430
+你不会想要在bash里
 automating running a bunch of commands,
 you don't want to write any
 
 0:06:33.430,0:06:35.411
+写业务逻辑之类的东西
 other like business logic in bash
 
 0:06:35.411,0:06:39.011
+只是说我想按这样的顺序跑这些命令
 it is just for I want to run these
 
 0:06:39.011,0:06:44.110
+可能需要有参数，但是就像那样
 commands, in this order. Maybe with
 arguments, but like even that
 
 0:06:44.110,0:06:47.581
+一旦你用上参数，你也不确定到底要不要写bash脚本
 it's unclear do you want to bash script
 once you start taking arguments
 
 0:06:47.581,0:06:52.691
+同样地，一旦你着手文本处理
 Similarly, once you start doing any
 kind of like text processing or
 
 0:06:52.691,0:06:55.131
+或者配置这样的工作
 configuration, all that
 
 0:06:55.131,0:06:59.111
+这些都需要一个
 reach for a language that is a more serious
 
 0:06:59.111,0:07:01.031
+比bash脚本更严谨的编程语言
 programming language than bash is
 
 0:07:01.091,0:07:03.451
+bash脚本说白了就是那种简短的一次性的脚本
 bash is really for sort of short one-off
 
 0:07:03.461,0:07:10.211
+或者在shell的终端上有着良好定义的用例的那种
 scripts or ones that have a very well-defined
 use case on the terminal in
 
 0:07:10.211,0:07:12.851
+也许
 the shell, probably
 
 0:07:12.851,0:07:15.941
+如果要讲得稍微详细点，如果你需要写个bash脚本
 For a slightly more concrete guideline,
 you might say write a
 
 0:07:15.941,0:07:19.211
+那它最好在100行代码以内
 bash script if it's less than a hundred
 lines of code or so, but once it gets
 
 0:07:19.211,0:07:21.611
+一旦超过这个行数，bash就显得不怎么好用了
 beyond that point bash is kind of
 unwieldy and it's probably worth
 
 0:07:21.611,0:07:25.091
+很有可能需要切换到一个更严谨的编程语言，比如Python
 switching to a more serious programming
 language like Python
 
 0:07:25.091,0:07:26.511
+另外
 and to add to that
 
 0:07:26.511,0:07:32.211
+我想说我自己有时也用Python写脚本
 I would say that I found myself writing
 sometimes scripts in Python because
 
 0:07:32.211,0:07:36.911
+因为如果我已经用Python解决了一部分子问题
 If I have already solved some subproblem
 that covers part of the problem in Python
 
 0:07:36.911,0:07:40.631
+我发现用Python把之前的解决方案组到一块更容易
 I find it much easier to compose the
 previous solution that I found out in
 
 0:07:40.631,0:07:45.731
+我试图复用bash代码，发现它们并不如Python容易复用
 Python and just try to reuse bash code,
 that I don't find as reusable as Python
 
 0:07:45.731,0:07:49.600
+同时还有一个好处是很多人已经造好了轮子
 And in the same way it's kind of nice that
 a lot of people have written something
 
 0:07:49.600,0:07:52.631
+可以用Python库或者Ruby库去做这些事情
 like Python libraries or like Ruby libraries
 to do a lot of these things
 
 0:07:52.631,0:07:58.451
+相比之下，在bash里很难复用代码
 whereas in bash is kind of hard
 to have like code reuse
 
 0:07:58.451,0:08:01.720
+事实上，我还想说
 And in fact,
 
 0:08:01.720,0:08:07.631
+通常，如果你发现某种语言有你需要的库
 I think to add to that. Usually, if you
 find a library in some language that
 
 0:08:07.631,0:08:12.091
+正好能帮你完成你手头的活计，就用这门语言
 helps with the task you're trying to
 do, use that language for the job
 
 0:08:12.091,0:08:15.671
+在bash里没什么库，只有你电脑上的程序
 And in bash there are no libraries, there
 are only the programs on your computer
 
 0:08:15.771,0:08:18.931
+所以你可能并不想用bash，除非有个你可以直接调用的程序
 So you probably don't want to use
 it unless like there's a program
 
 0:08:18.941,0:08:23.741
+我认为关于bash，另一件你需要记住的是
 you can just invoke I do think another
 thing worth remembering about bash
 
 0:08:23.741,0:08:26.451
+bash真的很难写对
 bash is really hard to get right.
 
 0:08:26.451,0:08:30.531
+解决你现在手头上的特例可能非常容易
 It's very easy to get it right for the particular
 use case you're trying to solve right now
 
 0:08:30.531,0:08:32.471
+但是比如说
 but things like
 
 0:08:32.471,0:08:35.891
+如果其中一个文件名有空格呢？
 What if one of the filenames has a space in it?
 
 0:08:35.891,0:08:38.891
+它曾在bash脚本里触发过很多bug，带来过很多问题
 It has caused so many bugs and so
 
 0:08:38.891,0:08:43.151
+如果你用个正儿八经的编程语言
 many problems in bash scripts and if you
 use a real programming language then
 
 0:08:43.151,0:08:46.642
+那些问题根本就不是事
 those problems just go away
 
 0:08:46.651,0:08:50.491
+回答完毕
 Checked it
 
 0:08:50.571,0:08:51.571
