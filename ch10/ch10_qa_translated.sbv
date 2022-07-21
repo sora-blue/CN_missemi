@@ -291,12 +291,12 @@ keyboard more in your mouse less. It means
 that you get to spend more of your
 
 0:03:49.311,0:03:53.751
-这让你花更多时间做有用的事而不是移动（鼠标）
+这让你花更多时间在有用的事上而不是到处跑
 time doing useful things and
 less of your time moving
 
 0:03:53.751,0:03:56.251
-这就是我首先推荐的工具
+这就是我首先推荐的
 I think that would be my top priority,
 
 0:04:04.511,0:04:06.751
@@ -314,7 +314,7 @@ I think the core idea is you should try
 to find the types of tasks that you are
 
 0:04:16.151,0:04:18.371
-你应该发现你做的重复性工作
+你应该找出你任务中的重复性工作
 doing repetitively and so
 
 0:04:18.371,0:04:23.791
@@ -328,7 +328,7 @@ you find yourself using jupyter notebooks,
 like the one we presented
 
 0:04:27.130,0:04:32.560
-相对，用鼠标来干这件事可能不是个好主意
+用鼠标来干这件事可能不是个好主意
 yesterday, a lot. Then again, using
 a mouse for that might not be
 
@@ -374,12 +374,12 @@ basis then it might not worth prioritizing them
 out of the topics
 
 0:05:07.531,0:05:11.611
-我个人认为两件最有用的工具就是版本控制和文本编辑器
+我个人认为两个最有用的工具就是版本控制和文本编辑器
 covered in this class in my opinion two
 of the most useful things are version
 
 0:05:11.621,0:05:15.220
-我认为这两者有点细微差别
+这两者有点细微差别
 control and text editors, and I think they're
 a little bit different from each
 
@@ -404,7 +404,7 @@ you could edit text just fine maybe a little
 bit inefficiently whereas I think
 
 0:05:29.890,0:05:33.100
-与之相对，我想版本控制是另一项非常有用的技能
+与之相对，版本控制是另一项非常有用的技能
 version control is another really useful
 skill and that's one where if you don't
 
@@ -414,7 +414,7 @@ really know the tool properly, it can actually
 lead to some problems like loss
 
 0:05:36.580,0:05:39.490
-比如丢失数据或者只是难以和人们协作
+比如丢失数据，或者只是难以和人们协作开发
 of data or just inability to collaborate
 properly with people so I
 
@@ -664,328 +664,421 @@ those problems just go away
 Checked it
 
 0:08:50.571,0:08:51.571
+下一个问题
 For our next question
 
 0:08:51.571,0:08:56.211
+请问引用（source）一个脚本和执行（execute）一个脚本的区别？
 What is the difference between sourcing
 a script and executing that script ?
 
 0:08:57.071,0:09:02.711
+所以这个实际上，我们几小时前在办公室讨论时也是觉得
 So this actually, we got in office
 hours a while back as well which is
 
 0:09:02.871,0:09:06.991
+它们不是一样的吗？不都就是运行bash脚本吗？
 Aren't they the same? like aren't they
 both just running the bash script?
 
 0:09:06.991,0:09:08.051
+事实就是这样
 and it is true
 
 0:09:08.051,0:09:12.191
+它们最后都会运行脚本里的代码
 both of these will end up executing the
 lines of code that are in the script
 
 0:09:12.191,0:09:16.571
+不同之处在于
 the ways in which they differ is that
 sourcing a script is telling your
 
 0:09:16.571,0:09:22.991
+引用一个脚本是让你当前的bash脚本、当前的bash会话执行程序
 current bash script, your current bash
 session to execute that program
 
 0:09:23.131,0:09:28.911
+而执行一个脚本是创建一个新的bash进程，在那里面跑程序
 whereas the other one is, start up a new instance
 of bash and run the program there instead
 
 0:09:29.291,0:09:34.931
+需要区分二者的场景，比如想象“script.sh”试图切换目录
 And this matters for things like imagine that
 "script.sh" tries to change directories
 
 0:09:34.931,0:09:37.841
+如果你用第二种方式跑脚本
 If you are running the script
 as in the second invocation
 
 0:09:37.841,0:09:42.761
+即输入"./script.sh"，在新进程里目录会切换
 "./script.sh", then the new
 process is going to change
 
 0:09:42.761,0:09:46.891
+但是脚本执行完返回shell的时候
 directories but by the time that script
 exits and returns to your shell
 
 0:09:46.891,0:09:51.831
+你的shell的工作目录还是没有变化
+然而，如果你在一个脚本中用到cd命令，然后你引用它
 your shell still remains in the same place. However,
 if you do CD in a script and you source it
 
 0:09:51.831,0:09:55.241
+你当前的bash实例就是最终执行这个脚本的进程
 Your current instance of bash is the
 one that ends up running it and
 
 0:09:55.241,0:09:57.951
+所以它最终会执行cd命令切换工作目录
 so it ends up CDing where you are
 
 0:09:57.951,0:10:01.171
+这也就是为什么，如果你定义函数
 This is also why if you define functions
 
 0:10:01.171,0:10:04.751
+比如说，你想让它在你当前的shell会话执行
 For example, that you may want to
 execute in your shell session
 
 0:10:04.751,0:10:07.011
+你需要引用（source）这个脚本，而不是直接跑
 You need to source the script, not run it
 
 0:10:07.011,0:10:10.261
+因为如果你直接跑，这个函数会定义在
 Because if you run it, that function
 will be defined in the
 
 0:10:10.261,0:10:11.931
+（另一个）bash实例上
 instance of bash
 
 0:10:11.931,0:10:16.831
+在新创建的bash进程上，但是不会定义在你当前的shell上
 In the bash process that gets launched but it
 will not be defined in your current shell
 
 0:10:16.831,0:10:22.871
+我认为这是二者最大的区别
 I think those are two of the biggest
 differences between the two
 
 0:10:29.211,0:10:29.711
+下一个问题
 Next question,
 
 0:10:29.873,0:10:35.131
+请问各种包和工具在哪里存储？引用它们又是怎么操作的？
 What are the places where various packages and tools
 are stored and how does referencing them work?
 
 0:10:35.131,0:10:39.171
+/bin和/lib又是什么？
 What even is /bin or /lib?
 
 0:10:39.171,0:10:45.091
+就像我们在第一节课提到的那样，
+这涉及到“PATH环境变量”
 So as we covered in the first lecture,
 there is this PATH environment variable
 
 0:10:45.091,0:10:49.551
+它用分号（冒号？）分隔开一些表示路径的字符串
 which is a semicolon separated
 string of all the places
 
 0:10:49.551,0:10:55.111
+你的shell会在这些路径中寻找二进制程序
 where your shell is gonna look for binaries
 and if you just do something
 
 0:10:55.111,0:10:58.171
+如果你输入“echo $PATH”，你就能看到这个列表
 like "echo $PATH", you're gonna get this list
 
 0:10:58.171,0:11:02.251
+shell会按顺序查找这些目录下的文件
 and all these places are gonna
 be consulted in order.
 
 0:11:02.251,0:11:03.601
+会查找所有这些目录，而且实际上
 It's gonna go through all of them and in fact
 
 0:11:03.601,0:11:07.011
+-这里已经有……我们讲which了吗？-是的
 - There is already... Did we cover which? + Yeah
 
 0:11:07.211,0:11:10.011
+所以如果运行which加上一条任意的命令
 So if you run "which" and a specific command
 
 0:11:10.021,0:11:14.071
+shell实际上会告诉你它在哪里找到这条命令
 the shell is actually is gonna tell
 you where it's finding this
 
 0:11:14.071,0:11:15.391
+除此之外，
 Beyond that,
 
 0:11:15.391,0:11:20.431
+有些约定俗成的目录，很多程序都把二进制文件放在这里
 there is like some conventions where a lot
 of programs will install their binaries
 
 0:11:20.431,0:11:24.071
+比如/usr/bin（或者至少在这个目录添加符号链接）
 and they're like /usr/bin (or at
 least they will include symlinks)
 
 0:11:24.071,0:11:26.051
+所以在/usr/bin你可以找到这些文件
 in /usr/bin so you can find them
 
 0:11:26.191,0:11:28.211
+还有一个目录/usr/local/bin
 There's also a /usr/local/bin
 
 0:11:28.211,0:11:33.951
+还有一些特殊的目录，比如/usr/sbin是专属于sudo用户的目录
 There are special directories. For example,
 /usr/sbin it's only for sudo user and
 
 0:11:33.951,0:11:38.491
+有些约定速成的目录在不同发行版之间有些细微的差别
 some of these conventions are slightly
 different between different distros so
 
 0:11:38.491,0:11:47.571
+我了解到比如有些发行版把用户二进制文件安装到/opt目录
 I know like some distros for example install
 the user libraries under /opt for example
 
 0:11:51.191,0:11:55.491
+是的我认为关于/bin目录需要额外解释一下
 Yeah I think one thing just
 to talk a little bit of more
 
 0:11:55.651,0:12:00.631
+然后Anish，可以请你解释其他目录吗
 about /bin and then Anish maybe you can
 do the other folders so when it comes to
 
 0:12:00.631,0:12:02.791
+所以当我们谈到/bin目录
 /bin the convention
 
 0:12:02.791,0:12:10.051
+有一些惯例，通常的用法是用/bin存储必要的系统工具
 There are conventions, and the conventions are
 usually /bin are for essential system utilities
 
 0:12:10.051,0:12:12.531
+用/usr/bin存储用户程序
 /usr/bin are for user programs and
 
 0:12:12.531,0:12:17.431
+用/usr/local/bin存储用户编译的程序
 /usr/local/bin are for user
 compiled programs, sort of
 
 0:12:17.431,0:12:21.691
+即安装后想要让用户直接运行的程序，放在/usr/bin
 so things that you installed that you intend
 the user to run, are in /usr/bin
 
 0:12:21.691,0:12:26.711
+在你的系统上开发，但是用户自己编译的，可能放在/usr/local/bin
 things that a user has compiled themselves and stuck
 on your system, probably goes in /usr/local/bin
 
 0:12:26.711,0:12:29.991
+但是再次强调一下，不同机器、不同发行版之间情况大不相同
 but again, this varies a lot from machine
 to machine, and distro to distro
 
 0:12:29.991,0:12:33.971
+比如在Arch Linux上，/bin符号链接到/usr/bin
 On Arch Linux, for example, /bin
 is a symlink to /usr/bin
 
 0:12:33.971,0:12:40.261
+他们是一样的，而且就像Jose提到的，
+存放root用户才能运行的程序的那个/sbin目录
 They're the same and as Jose mentioned, there's
 also /sbin which is for programs that are
 
 0:12:40.261,0:12:43.801
+这一点在不同发行版上也有差异
 intended to only be run as root, that
 also varies from distro to distro
 
 0:12:43.801,0:12:47.251
+可能你根本没有这个目录，而且在很多系统上
 whether you even have that directory, and
 on many systems like /usr/local/bin
 
 0:12:47.251,0:12:51.151
+比如/usr/local/bin目录可能不在PATH里面，
+甚至在你的系统上可能没有这个目录
 might not even be in your PATH, or
 might not even exist on your system
 
 0:12:51.151,0:12:55.831
+另一方面，在BSD，/usr/local/bin目录被使用的次数要频繁得多
 On BSD on the other hand /usr/local/bin
 is often used a lot more heavily
 
 0:12:56.731,0:12:57.231
+是的所以
 yeah so
 
 0:12:57.231,0:13:01.111
+到目前为止我们讨论的是：在Linux相关、Linux、BSD相关等系统之间
 What we were talking about so far, these
 are all ways that files and folders are
 
 0:13:01.111,0:13:05.071
+可以有很多种文件和文件夹的组织方式
 organized on Linux things or Linux or
 BSD things vary a little bit between
 
 0:13:05.071,0:13:07.151
+在它们和macOS或其他平台之间则很少
 that and macOS or other platforms
 
 0:13:07.151,0:13:09.301
+我认为对于某个特定目录
 I think for the specific locations,
 
 0:13:09.301,0:13:11.471
+如果你想要准确知道它是用来干什么的，你可以去查一下
 if you to know exactly what it's
 used for, you can look it up
 
 0:13:11.471,0:13:17.291
+记住一些通用模式，比如/bin目录经常存放二进制程序
 But some general patterns to keep in mind or anything
 with /bin in it has binary executable programs in it,
 
 0:13:17.291,0:13:19.891
+比如/lib经常用来存放程序用来链接的库
 anything with \lib in it, has
 libraries in it so things that
 
 0:13:19.891,0:13:25.081
+还有一些事知道了会有帮助
 programs can link against, and then some
 other things that are useful to know are
 
 0:13:25.081,0:13:29.431
+比如很多系统有一个/etc目录，用来存放配置文件
 there's a /etc on many systems, which
 has configuration files in it and
 
 0:13:29.431,0:13:34.311
+有一个/home，在这个目录下存放着每个用户的用户目录
 then there's /home, which underneath that directory
 contains each user's home directory
 
 0:13:34.311,0:13:38.521
+所以在一个linux环境，如果我的用户名是Anish
 so like on a linux box my username
 or if it's Anish will
 
 0:13:38.651,0:13:41.351
+对应的用户文件夹就是/home/anish
 correspond to a home directory /home/anish
 
 0:13:42.071,0:13:43.351
+是的我猜还有一些其他目录
 Yeah I guess there are
 
 0:13:43.351,0:13:47.671
+比如/tmp通常是一个临时文件夹，重启会清除
 a couple of others like /tmp is usually
 a temporary directory that gets
 
 0:13:47.671,0:13:51.351
+不一定每次重启都清除，有时候会，这取决于你的系统
 erased when you reboot not always but sometimes,
 you should check on your system
 
 0:13:51.731,0:13:59.211
+有一个/var目录，通常存放内容经常变化的文件
 There's a /var which often holds like
 files the change over time so
 
 0:13:59.211,0:14:06.151
+比如包管理器的锁文件
 these these are usually going to be things
 like lock files for package managers
 
 0:14:06.151,0:14:12.431
+或者跟踪进程ID的日志文件
 they're gonna be things like log files
 files to keep track of process IDs
 
 0:14:12.431,0:14:16.471
+有一个/dev目录展示设备文件
 then there's /dev which shows devices so
 
 0:14:16.471,0:14:20.551
+通常这些是和连接到系统上的设备相对应的特殊文件
 usually so these are special files that
 correspond to devices on your system we
 
 0:14:20.551,0:14:27.391
+我们讨论了/sys目录，Anish提到了/etc目录
 talked about /sys, Anish mentioned /etc
 
 0:14:29.051,0:14:36.031
+/opt是一个通常存放第三方软件的目录
 /opt is a common one for just like third-party
 software that basically it's usually for
 
 0:14:36.031,0:14:40.951
+供一些公司在Linux上发布他们的软件
+但是这些公司并不真的理解软件跑在Linux上是什么样子
 companies ported their software to Linux
 but they don't actually understand what
 
 0:14:40.951,0:14:45.391
+所以他们弄了一个目录存放他们杂七杂八的文件
 running software on Linux is like, and
 so they just have a directory with all
 
 0:14:45.391,0:14:51.411
+安装那些软件的时候，它们通常被安装到/opt目录
 their stuff in it and when those get installed
 they usually get installed into /opt
 
 0:14:51.411,0:14:55.651
+这些是我现在能想到的所有东西了
 I think those are the ones off the top of my head
 
 0:14:55.651,0:14:57.771
+是的
 yeah
 
 0:14:57.771,0:15:02.271
+我们将会在课后把这些东西列出到课堂笔记中
 And we will list these in our lecture notes
 which will produce after this lecture
 
 0:15:02.271,0:15:04.431
+下一个问题
 Next question
 
 0:15:04.431,0:15:07.080
