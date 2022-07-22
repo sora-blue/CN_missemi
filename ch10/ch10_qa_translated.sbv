@@ -7,7 +7,7 @@ I guess we should do an intro to to this as well,
 so this is a just sort of a
 
 0:00:09.581,0:00:14.740
-在这里，在现场的两位同学和在家的各位同学
+在这里，在现场坐着的两位同学和在家的各位同学
 free-form Q&A lecture where you, as in
 the two people sitting here, but also
 
@@ -17,7 +17,7 @@ everyone at home who did not come here
 in person get to ask questions and we
 
 0:00:19.841,0:00:22.961
-所以我们这里有人们预先提问的一大堆问题
+所以我们这里有同学们预先提问的一大堆问题
 have a bunch of questions people asked
 in advance but you can also ask
 
@@ -33,7 +33,7 @@ by raising your hand or you can submit it on
 the forum and be anonymous, it's up to you
 
 0:00:33.611,0:00:35.671
-总之，我们要做的是浏览同学们提出的一些问题
+总之，我们要做的是一一回应同学们提出的一些问题
 regardless though, what we're gonna
 do is just go through some of the
 
@@ -374,7 +374,7 @@ basis then it might not worth prioritizing them
 out of the topics
 
 0:05:07.531,0:05:11.611
-我个人认为两个最有用的工具就是版本控制和文本编辑器
+我个人认为最有用的两个工具就是版本控制和文本编辑器
 covered in this class in my opinion two
 of the most useful things are version
 
@@ -1082,425 +1082,547 @@ which will produce after this lecture
 Next question
 
 0:15:04.431,0:15:07.080
+请问我应该用apt-get安装Python包
 Should I apt-get install a Python whatever
 
 0:15:07.080,0:15:10.691
+还是应该用pip安装？
 package or pip install that package
 
 0:15:10.691,0:15:13.890
+这是一个好问题
 so this is a good question that I think at
 
 0:15:13.890,0:15:17.310
+我认为在一个更高的层次，这个问题实质上是在问
 a higher level this question is asking
 should I use my systems package manager
 
 0:15:17.310,0:15:20.850
+我应该用系统的包管理器还是用其他的包管理器安装东西
 to install things or should I use some other
 package manager. Like in this case
 
 0:15:20.850,0:15:25.021
+在这个问题里具体到了某种特定语言
 one that's more specific to a particular
 language. And the answer here is also
 
 0:15:25.021,0:15:28.590
+我们的回答是看情况，有时候最好用系统包管理器
 kind of it depends, sometimes it's nice
 to manage things using a system package
 
 0:15:28.590,0:15:31.950
+这样所有东西的安装和更新都可以在一个地方完成
 manager so everything can be installed
 and upgraded in a single place but
 
 0:15:31.950,0:15:35.160
+但是我认为有时候在系统仓库能找到的一些东西
 I think oftentimes whatever is available
 in the system repositories the things
 
 0:15:35.160,0:15:37.800
+那些你用apt-get或者其他类似工具能获取到的
 you can get via a tool like
 apt-get or something similar
 
 0:15:37.800,0:15:41.040
+比起特定语言的仓库里，版本可能有些老旧
 might be slightly out of date compared to
 the more language specific repository
 
 0:15:41.040,0:15:45.060
+举个例子，对于我用到的大量Python包
 so for example a lot of the Python packages
 I use I really want the most
 
 0:15:45.060,0:15:47.771
+我更想要最新版本，所以我用pip安装
 up-to-date version and so
 I use pip to install them
 
 0:15:48.551,0:15:51.091
+再说
 Then, to extend on that is
 
 0:15:51.091,0:15:57.751
+有时候对于系统包管理器
 sometimes the case the system packages
 might require some other
 
 0:15:57.751,0:16:02.461
+它可能需要意料不到的一些其他依赖
 dependencies that you might not have realized
 about, and it's also might be
 
 0:16:02.461,0:16:07.201
+也有可能对于一些系统，至少包括alpine Linux
 the case or like for some systems,
 at least for like alpine Linux they
 
 0:16:07.201,0:16:11.221
+他们没有相当一部分Python包需要的轮子（依赖）
 don't have wheels for like a lot of the
 Python packages so it will just take
 
 0:16:11.221,0:16:15.331
+因为需要从头编译出来，要花更长时间、占用更多空间
 longer to compile them, it will take more
 space because they have to compile them
 
 0:16:15.331,0:16:20.761
+与之相对的，如果你直接用pip
 from scratch. Whereas if you just go
 to pip, pip has binaries for a lot of
 
 0:16:20.761,0:16:23.471
+pip有很多适配不同平台的二进制文件，所以可能就行得通
 different platforms and that will probably work
 
 0:16:23.471,0:16:29.191
+你还需要知道的一点是：pip在不同电脑上行为可能不完全一样
 You also should be aware that pip might not do
 the exact same thing in different computers
 
 0:16:29.191,0:16:33.601
+所以比如说，如果你在用某种笔记本或台式机
 So, for example, if you are in a kind of laptop
 or like a desktop that is running like
 
 0:16:33.601,0:16:38.971
+它跑着x86或x86-64指令集，你可能就能找到需要的二进制文件
 a x86 or x86_64 you probably have binaries,
 but if you're running something
 
 0:16:38.971,0:16:43.471
+但是如果你在树莓派或其他嵌入式设备上
 like Raspberry Pi or some other kind of
 embedded device. These are running on a
 
 0:16:43.471,0:16:47.611
+因为这些设备有着不同的硬件体系，你可能就很难找到需要的二进制文件
 different kind of hardware architecture
 and you might not have binaries
 
 0:16:47.611,0:16:51.841
+我认为这一点最好也考虑进去，就是这种情况下
 I think that's also good to take into account,
 in that case in might be worthwhile to
 
 0:16:51.841,0:16:58.551
+最好用系统包，无他，就是因为安装花时间更短
 use the system packages just because they
 will take much shorter to get them
 
 0:16:58.551,0:17:01.691
+比从头编译完成整个Python安装要短
 than to just to compile from scratch
 the entire Python installation
 
 0:17:01.691,0:17:06.741
+除此之外，我想不到在什么情况
 Apart from that, I don't think I can think of any exceptions
 where I would actually use the system packages
 
 0:17:06.741,0:17:09.251
+不得不用系统包代替Python提供的包
 instead of the Python provided ones
 
 0:17:19.011,0:17:20.851
+所以，另一件事你需要记住的是
 So, one other thing to keep in mind is that
 
 0:17:20.861,0:17:26.180
+有时候同时有好几个程序
 sometimes you will have more than one
 program on your computer and you might
 
 0:17:26.180,0:17:29.961
+在一台电脑上你可能同时开发不止一个程序
 be developing more than one program on
 your computer and for some reason not
 
 0:17:29.961,0:17:33.861
+出于某些原因，不是所有的程序都使用最新的包
 all programs are always built with the latest
 version of things, sometimes they
 
 0:17:33.861,0:17:39.351
+有时候这些包的版本有点落后，
+如果你在整个系统上安装点什么东西
 are a little bit behind, and when you
 install something system-wide you can
 
 0:17:39.351,0:17:44.691
+你就只能……看你系统的实际情况了
+但你用pip，通常就只有一个版本
 only... depends on your exact system,
 but often you just have one version
 
 0:17:44.691,0:17:49.711
+尤其是和Python的虚拟环境（virtualenv）等
 what pip lets you do, especially combined
 with something like python's virtualenv,
 
 0:17:49.711,0:17:54.531
+和其他语言中类似的东西结合起来，
+这种情况下你可以说
 and similar concepts exist for other
 languages, where you can sort of say
 
 0:17:54.531,0:17:59.660
+我想要（比如，NPM管理node模块和这个是一回事）
 I want to (NPM does the same thing as well
 with its node modules, for example) where
 
 0:17:59.660,0:18:05.991
+在项目自己的子文件夹下编译包的依赖
+（注：比如使用Python的embed版本）
 I'm gonna compile the dependencies of
 this package in sort of a subdirectory
 
 0:18:05.991,0:18:10.431
+然后所有依赖的版本就会在那里构建
 of its own, and all of the versions that it
 requires are going to be built in there
 
 0:18:10.431,0:18:13.910
+你可以对每个项目分开这样做
 and you can do this separately for separate
 projects so there they have
 
 0:18:13.910,0:18:16.910
+这样就可以容许它们有不同的依赖或相同依赖的不同版本
 different dependencies or the same dependencies
 with different versions
 
 0:18:16.910,0:18:20.930
+它们各自保持独立
 they still sort of kept separate. And that
 is one thing that's hard to achieve
 
 0:18:20.931,0:18:22.651
+对于系统包，这种事就很难做到
 with system packages
 
 0:18:27.131,0:18:27.851
+下一个问题
 Next question
 
 0:18:27.911,0:18:32.771
+请问能够提升我的代码性能表现的最简单最好用的性能分析工具有哪些？
 What's the easiest and best profiling tools
 to use to improve performance of my code?
 
 0:18:34.351,0:18:39.231
+聊这个话题我们能聊到昏天黑地
 This is a topic we could talk
 about for a very long time
 
 0:18:39.231,0:18:42.881
+最简单最好用的是打印日志等东西的时候带上时间
 The easiest and best is to print stuff using time
 
 0:18:42.881,0:18:48.431
+就像，我不是开玩笑，很多情况下这是你代码里最简单的方法
 Like, I'm not joking, very often
 the easiest thing is in your code
 
 0:18:48.971,0:18:53.751
+一开始你弄清楚当前的时间
 At the top you figure out what the current
 time is, and then you do sort of
 
 0:18:53.751,0:18:57.920
+在每个模块结束的地方输出执行完过了多长时间
 a binary search over your program of add
 a print statement that prints how much
 
 0:18:57.920,0:19:02.511
+在耗时里做一个二分查找，直到你找到耗时最长的一段代码
 time has elapsed since the start of your
 program and then you do that until you
 
 0:19:02.511,0:19:06.320
+然后你就看那个耗时最长的函数
 find the segment of code that took the
 longest. And then you go into that
 
 0:19:06.320,0:19:09.531
+把上面做的事情重复一遍
 function and then you do the same thing
 again and you keep doing this until you
 
 0:19:09.531,0:19:14.031
+直到你大概弄明白时间都花在哪了
+这不是万无一失的，但是做起来真的很简单
 find roughly where the time was spent. It's
 not foolproof, but it is really easy
 
 0:19:14.031,0:19:16.721
+很快就能给到你满意的信息
 and it gives you good information quickly
 
 0:19:16.721,0:19:25.361
+如果你需要更专业的信息
+Valgrind有个工具叫cache-grind？
 if you do need more advanced information
 Valgrind has a tool called cache-grind?
 
 0:19:25.361,0:19:29.431
+叫grind？还是Cache grind？总之就这两个中的一个
 call grind? Cache grind? One of the two.
 
 0:19:29.431,0:19:33.310
+这个工具能让你在运行程序的同时
 and this tool lets you run your program and
 
 0:19:33.310,0:19:38.741
+测量各部分的运行时间，知晓所有的调用栈
 measure how long everything takes and
 all of the call stacks, like which
 
 0:19:38.741,0:19:42.521
+比如知道哪个函数调用了哪个函数
 function called which function, and what
 you end up with is a really neat
 
 0:19:42.521,0:19:47.081
+最后你能得到一份非常整洁的关于你的整个源程序的注解
 annotation of your entire program source
 with the heat of every line basically
 
 0:19:47.081,0:19:51.761
+具体到每一行代码花了多长时间
 how much time was spent there. It does
 slow down your program by like an order
 
 0:19:51.761,0:19:56.021
+它确实会使你的程序运行慢一个数量级，而且它不支持线程
 of magnitude or more, and it doesn't really
 support threads but it is really
 
 0:19:56.021,0:20:01.121
+但是如果你能用上它，它真的很有用
+如果不能用这个，也可以用perf
 useful if you can use it. If you can't,
 then tools like perf or similar tools
 
 0:20:01.121,0:20:05.201
+或者其他语言里类似的通常进行取样、性能分析的工具
 for other languages that do usually some
 kind of sampling profiling like we
 
 0:20:05.201,0:20:09.811
+就像我们之前在profiler一课讲的一样，它们
+可以很快给到你非常有用的数据
 talked about in the profiler lecture, can
 give you pretty useful data quickly,
 
 0:20:09.811,0:20:15.160
+但是数据有点多
 but it's a lot of data around
 this, but they're a little bit
 
 0:20:15.160,0:20:18.971
+有点偏颇向它们认为是问题的东西
 biased and what kind of things they usually
 highlight as a problem and it
 
 0:20:18.971,0:20:22.961
+有时可能很难从这些数据中提取到有用的信息
 can sometimes be hard to extract meaningful
 information about what should
 
 0:20:22.961,0:20:27.701
+来告诉我该改动什么地方，而直接print输出这种方法
 I change in response to them. Whereas the
 sort of print approach very quickly
 
 0:20:27.701,0:20:32.171
+就可以很快告诉你这段代码不行或者跑得很慢
 gives you like this section
 of code is bad or slow
 
 0:20:32.171,0:20:34.871
+我想这就是我的答案
 I think would be my answer
 
 0:20:34.871,0:20:40.431
+火焰图很好，它们是可视化这类信息的好方法
 Flamegraphs are great, they're a good way
 to visualize some of this information
 
 0:20:41.491,0:20:45.550
+是的我只想补充一条
 Yeah I just have one thing to add,
 oftentimes programming languages
 
 0:20:45.550,0:20:48.910
+通常编程语言自带用于自家语言的性能分析工具
 have language specific tools for profiling
 so to figure out what's the
 
 0:20:48.910,0:20:52.191
+所以去找适合你用的语言的工具就行了
+比如在浏览器里用JavaScript
 right tool to use for your language like if
 you're doing JavaScript in the web browser
 
 0:20:52.191,0:20:55.411
+浏览器自带很好的性能分析工具，用那个就行
 the web browser has a really nice tool for
 doing profiling you should just use that
 
 0:20:55.411,0:21:00.471
+或者如果你正在用go，比如说，
+go有一款内置性能分析工具非常好，用这个就完事了
 or if you are using go, for example, go has a built-in
 profiler is really good you should just use that
 
 0:21:01.711,0:21:04.251
+最后要说的是
 A last thing to add to that
 
 0:21:04.251,0:21:09.951
+有时候你会发现这样在耗费时长上做二分查找
 Sometimes you might find that doing this binary
 search over time that you're kind of
 
 0:21:09.961,0:21:14.351
+本意是在找时间花在哪里的，但是有时候
 finding where the time is going, but this
 time is sometimes happening because
 
 0:21:14.351,0:21:18.461
+你会发现时间花在了网络上，或者等待文件上
 you're waiting on the network, or you're
 waiting for some file, and in that case
 
 0:21:18.461,0:21:23.440
+在那种情况下，如果你想要确保
 you want to make sure that the time
 that is, if I want to write
 
 0:21:23.440,0:21:27.310
+比如我要写入1Gib数据到文件或读出1Gib数据到内存
 like 1 gigabyte file or like read 1
 gigabyte file and put it into memory
 
 0:21:27.310,0:21:32.260
+你想要确保实际上花的时间是你最少要等的时间
 you want to check that the actual time
 there, is the minimum amount of time
 
 0:21:32.260,0:21:36.221
+如果测量值是实际花的时间的十倍
 you actually have to wait. If it's ten times
 longer, you should try to use some
 
 0:21:36.221,0:21:39.371
+你应该使用我们在“调试和性能优化（debugging and profiling）”部分
+讲到的其他一些工具
 other tools that we covered in the debugging
 and profiling section to see
 
 0:21:39.371,0:21:45.671
+来找到为什么你没能充分利用所有资源的原因
 why you're not utilizing all your
 resources because that might...
 
 0:21:50.511,0:21:56.071
+因为这可能涉及到很多运行中的东西，比如在我的研究里
 Because that might be a lot of what's happening
 thing, like for example, in my research
 
 0:21:56.081,0:21:59.410
+在机器学习负载，很多时间花在加载数据上
 in machine learning workloads, a lot of
 time is loading data and you have to
 
 0:21:59.410,0:22:02.981
+你需要确保加载数据的时间
 make sure well like the time it takes to
 load data is actually the minimum amount
 
 0:22:02.981,0:22:07.500
+确实是你预期的最少时间
 of time you want to have that happening
 
 0:22:08.040,0:22:13.481
+基于此，有很多可以分析等待时间等等的专门工具
 And to build on that, there are actually
 specialized tools for doing things like
 
 0:22:13.481,0:22:17.351
+经常是这种情况，当你需要等待时
 analyzing wait times. Very often when
 you're waiting for something what's
 
 0:22:17.351,0:22:20.591
+实际上你等的是发起系统调用花费的时间
 really happening is you're issuing your
 system call, and that system call takes
 
 0:22:20.591,0:22:24.191
+系统调用需要一段时间来响应，像是你做大体积读写
 some amount of time to respond. Like you do
 a really large write, or a really large read
 
 0:22:24.191,0:22:28.361
+或者大批量地执行这种操作，
+这种情况下一种比较方便的操作是
 or you do many of them, and one thing
 that can be really handy here is
 
 0:22:28.361,0:22:31.841
+从内核获取程序运行时间的这类信息
 to try to get information out of the
 kernel about where your program is
 
 0:22:31.841,0:22:37.000
+这里（不是新鲜事物）
 spending its time. And so there's (it's
 not new), but there's a relatively
 
 0:22:37.000,0:22:42.820
+有一个相对新颖的工具叫BPF或eBPF，基本是做内核跟踪
 newly available thing called BPF or eBPF.
 Which is essentially kernel tracing
 
 0:22:42.820,0:22:48.531
+你可以用它来做一些非常炫酷的事情，包括跟踪用户程序
 and you can do some really cool things with
 it, and that includes tracing user programs.
 
 0:22:48.531,0:22:51.760
+可能不太好上手
 It can be a little bit awkward to
 get started with, there's a tool
 
 0:22:51.760,0:22:56.201
+有个工具叫BPF trace，我推荐你去看看
 called BPF trace that i would recommend
 you looking to, if you need to do like
 
 0:22:56.201,0:23:00.040
+如果你需要这种程度的底层性能调优
 this kind of low-level performance debugging.
 But it is really good for this
 
 0:23:00.040,0:23:04.601
+它真的很有用
 kind of stuff. You can get things like
 histograms over how much time was spent
 
 0:23:04.601,0:23:06.671
+你可以获取到关于某种特定系统调用的时间花费的柱状图
 in particular system calls
 
 0:23:06.671,0:23:09.721
+这个工具很棒
 It's a great tool
 
 0:23:12.251,0:23:15.351
