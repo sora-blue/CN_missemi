@@ -63,7 +63,7 @@ fire away
 all right so for our first question any
 
 0:00:52.091,0:00:55.961
-请问关于学习操作系统相关的课题有什么推荐吗
+（问题）请问关于学习操作系统相关的课题有什么推荐吗
 recommendations on learning operating
 system related topics like processes,
 
@@ -257,7 +257,7 @@ Answered
 For our next question
 
 0:03:19.371,0:03:23.951
-请问你会推荐先学习使用哪些工具？
+（问题）请问你会推荐先学习使用哪些工具？
 What are some of the tools you'd
 prioritize learning first?
 
@@ -460,7 +460,7 @@ an invaluable skill
 For our next question
 
 0:06:11.391,0:06:12.871
-请问什么时候我该用Python而不是bash脚本
+（问题）请问什么时候我该用Python而不是bash脚本
 when do I use Python versus a
 
 0:06:12.881,0:06:16.051
@@ -668,7 +668,7 @@ Checked it
 For our next question
 
 0:08:51.571,0:08:56.211
-请问引用（source）一个脚本和执行（execute）一个脚本的区别？
+（问题）请问引用（source）一个脚本和执行（execute）一个脚本的区别？
 What is the difference between sourcing
 a script and executing that script ?
 
@@ -778,7 +778,7 @@ differences between the two
 Next question,
 
 0:10:29.873,0:10:35.131
-请问各种包和工具在哪里存储？引用它们又是怎么操作的？
+（问题）请问各种包和工具在哪里存储？引用它们又是怎么操作的？
 What are the places where various packages and tools
 are stored and how does referencing them work?
 
@@ -955,7 +955,7 @@ organized on Linux things or Linux or
 BSD things vary a little bit between
 
 0:13:05.071,0:13:07.151
-在它们和macOS或其他平台之间则很少
+在它们和macOS或其他平台之间变化则很少
 that and macOS or other platforms
 
 0:13:07.151,0:13:09.301
@@ -1082,7 +1082,7 @@ which will produce after this lecture
 Next question
 
 0:15:04.431,0:15:07.080
-请问我应该用apt-get安装Python包
+（问题）请问我应该用apt-get安装Python包
 Should I apt-get install a Python whatever
 
 0:15:07.080,0:15:10.691
@@ -1312,7 +1312,7 @@ with system packages
 Next question
 
 0:18:27.911,0:18:32.771
-请问能够提升我的代码性能表现的最简单最好用的性能分析工具有哪些？
+（问题）请问能够提升我的代码性能表现的最简单最好用的性能分析工具有哪些？
 What's the easiest and best profiling tools
 to use to improve performance of my code?
 
@@ -1626,353 +1626,450 @@ in particular system calls
 It's a great tool
 
 0:23:12.251,0:23:15.351
+（问题）请问你用什么浏览器插件
 What browser plugins do you use?
 
 0:23:16.731,0:23:19.731
+我一般能不用就不用
 I try to use as few as I can get away with using
 
 0:23:19.731,0:23:25.991
+因为我不喜欢有东西在我的浏览器里
 because I don't like things being in
 my browser, but there are a couple of
 
 0:23:25.991,0:23:30.311
+但有一些插件接近必需品
+第一个是uBlock Origin
 ones that are sort of staples.
 The first one is uBlock Origin.
 
 0:23:30.311,0:23:36.611
+uBlock Origin是众多广告拦截器之一，但不止是一个广告拦截器
 So uBlock Origin is one of many ad blockers but
 it's a little bit more than an ad blocker.
 
 0:23:36.611,0:23:42.530
+它是（ta们怎么叫它来着）一个网络过滤工具
 It is (a what do they call it?) a
 network filtering tool so it lets
 
 0:23:42.530,0:23:47.331
+所以你可以做到拦截广告以外的事
+比如屏蔽特定域名的链接
 you do more things than just block ads.
 It also lets you like block connections
 
 0:23:47.331,0:23:51.351
+或屏蔽特定类型的资源
 to certain domains, block connections
 for certain types of resources
 
 0:23:51.351,0:23:56.031
+所以我自己用的时候设置成“高级模式”
 So I have mine set up in what they call
 the Advanced Mode, where basically
 
 0:23:56.031,0:24:02.451
+基本上你可以屏蔽所有网络请求，但不止网络请求
 you can disable basically all network requests.
 But it's not just Network requests,
 
 0:24:02.451,0:24:07.430
+我也禁用了每个页面上的所有内嵌脚本
 It's also like I have disabled all inline
 scripts on every page and all
 
 0:24:07.430,0:24:11.540
+以及第三方图片和资源
 third-party images and resources, and then
 you can sort of create a whitelist
 
 0:24:11.540,0:24:16.351
+然后你可以为每个页面创建一个白名单
 for every page so it gives you really
 low-level tools around how to
 
 0:24:16.351,0:24:20.331
+这个插件为提升浏览安全提供了非常底层的工具
 how to improve the security of your browsing.
 But you can also set it in not the
 
 0:24:20.331,0:24:23.991
+但是你也可以不设置成高级模式，
+然后它就像个普通的广告拦截器那样做事
 advanced mode, and then it does much of
 the same as a regular ad blocker would
 
 0:24:23.991,0:24:28.101
+虽然效率相当高，如果你在挑一款广告拦截器
 do, although in a fairly efficient way
 if you're looking at an ad blocker it's
 
 0:24:28.101,0:24:31.510
+这个可能正合适，每个浏览器都能运行
 probably the one to use and it
 works on like every browser
 
 0:24:31.511,0:24:34.451
+我认为这是我的第一选择
 That would be my top pick I think,
 
 0:24:39.111,0:24:44.391
+可能我用的最频繁的一款插件叫Stylus
 I think probably the one I
 use like the most actively
 
 0:24:44.391,0:24:50.391
+这款插件允许你修改网页的CSS或者说样式表
 is one called Stylus. It lets you modify
 the CSS or like the stylesheets
 
 0:24:50.391,0:24:54.560
+这样可以非常整洁，因为网上冲浪时
 that webpages have. And it's pretty
 neat, because sometimes you're
 
 0:24:54.560,0:24:58.550
+有时候你会想要隐藏网站上你不感兴趣的东西
 looking at a website and you want
 to hide some part of the website
 
 0:24:58.550,0:25:04.211
+可能是广告，可能是对你来说毫无用处的侧边栏
 you don't care about. Like maybe a ad, maybe
 some sidebar you're not finding useful
 
 0:25:04.211,0:25:06.290
+结果是，这些玩意都在你的浏览器上展示
 The thing is, at the end of
 the day these things are
 
 0:25:06.290,0:25:09.591
+你可以控制执行哪些代码
 displaying in your browser, and you
 have control of what code is
 
 0:25:09.591,0:25:13.131
+类似Jon说的那样，你可以自由定制
 executing and similar to what Jon was
 saying, like you can customize this
 
 0:25:13.131,0:25:18.491
+我经常在大部分网页上隐藏某个部分
 to no end, and what I have for a lot of
 web pages like hide this this part, or
 
 0:25:18.491,0:25:23.390
+或者尝试实现暗黑模式
 also trying to make like dark modes for
 them like you can change pretty much the
 
 0:25:23.390,0:25:26.810
+你可以改变每个网站的颜色
 color for every single website. And what
 is actually pretty neat is that there's
 
 0:25:26.810,0:25:31.461
+最优雅的是有个在线仓库，人们在里面贡献每个网站的样式表
 like a repository online of people that
 have contributed this is stylesheets
 
 0:25:31.461,0:25:35.031
+所以有人可能已经弄好一个交到GitHub上了
 for the websites. So someone probably
 has (done) one for GitHub
 
 0:25:35.031,0:25:38.780
+比如我想要暗黑模式的GitHub，有人已经做好了一个
 Like I want dark GitHub and someone has
 already contributed one that makes
 
 0:25:38.780,0:25:44.631
+可以直接用上，网上冲浪巴适多了
 that much more pleasing to browse. Apart
 from that, one that it's not really
 
 0:25:44.631,0:25:49.491
+除此之外，另一个不怎么炫酷，但是我觉得相当有用的是
 fancy, but I have found incredibly helpful
 is one that just takes a screenshot an
 
 0:25:49.491,0:25:53.121
+一个截屏整个网站的插件
 entire website. And It will
 scroll for you and make
 
 0:25:53.121,0:25:57.711
+它还能自动滚动，生成整个网站的复杂图片
 compound image of the entire website and that's
 really great for when you're trying to
 
 0:25:57.711,0:26:00.111
+当你试图打印一个网站，发现体验很糟糕时，这个插件棒极了
 print a website and is just terrible.
 
 0:26:00.111,0:26:00.611
+（该功能现已内置在Firefox豪华套餐）
 (It's built into Firefox)
 
 0:26:00.611,0:26:02.671
+哦，有趣
 oh interesting
 
 0:26:02.671,0:26:05.751
+正好你提到内置进Firefox，另一个我非常喜欢的Firefox的特性是
 oh now that you mention builtin to Firefox,
 another one that I really like about
 
 0:26:05.751,0:26:09.071
+多账号容器（注：类似小号模式）
 Firefox is the multi account containers
 
 0:26:09.071,0:26:10.831
+（嗯是的，这很好）
 (Oh yeah, it's fantastic)
 
 0:26:10.831,0:26:12.291
+是什么让你们这些大部分浏览器
 Which kind of lets you
 
 0:26:12.291,0:26:16.670
+比如说Chrome
 By default a lot of web browsers, like
 for example Chrome, have this
 
 0:26:16.670,0:26:20.601
+默认这种概念，你当前的会话存有你所有的cookie
 notion of like there's session that you
 have, where you have all your cookies
 
 0:26:20.601,0:26:24.560
+这些cookie都同时被不同的网站共享
 and they are kind of all shared from the
 different websites in the sense of
 
 0:26:24.560,0:26:30.811
+就像在假设你一直在打开新的标签页，除非你进入匿名模式
 you keep opening new tabs and unless you go into
 incognito you kind of have the same profile
 
 0:26:30.811,0:26:34.190
+就像你对于所有网站都有一份相同的档案，就是这样
 And that profile is the same for
 all websites, there is this
 
 0:26:34.191,0:26:35.851
+这是一个插件还是一个内置功能？
 Is it an extension or is it built in?
 
 0:26:35.851,0:26:40.571
+（两边都是，比较复杂）
 (it's a mix, it's complicated)
 
 0:26:41.091,0:26:46.211
+我想你会需要安装或者启用它
 So I think you actually have to say you want
 to install it or enable it and again
 
 0:26:46.221,0:26:49.881
+名字是Multi Account Containers
 the name is Multi Account Containers and
 these let you tell Firefox to have
 
 0:26:49.881,0:26:53.961
+它允许你告诉Firefox维护各自独立的会话
 separate isolated sessions. So
 for example, you want to say
 
 0:26:53.961,0:26:58.851
+比如我访问Google或者逛Amazon都有一个独立的会话
 I have a separate sessions for whenever I
 visit to Google or whenever I visit Amazon
 
 0:26:58.851,0:27:01.791
+非常优雅，因为你可以在浏览器层面
 and that can be pretty neat, because then you can
 
 0:27:01.791,0:27:08.171
+确保二者间没有信息被共享
 At a browser level it's ensuring that no information
 sharing is happening between the two of them
 
 0:27:08.171,0:27:11.961
+而且这比不得不另开匿名模式窗口方便得多
 And it's much more convenient than
 having to open a incognito window
 
 0:27:11.961,0:27:14.471
+用匿名模式，它总是会清理掉所有东西
 where it's gonna clean all the time the stuff
 
 0:27:14.471,0:27:17.311
+（还需要对比一下Stylus和Stylish）
 (One thing to mention is Stylus vs Stylish)
 
 0:27:17.531,0:27:19.651
+对对对，我忘了这件事
 Oh yeah, I forgot about that
 
 0:27:19.651,0:27:24.931
+自行加载CSS样式表的浏览器插件也很重要
 One important thing is the browser extension
 for side loading CSS Stylesheets
 
 0:27:24.931,0:27:31.851
+这个插件叫Stylus，和比较古早的Stylish不同
 it's called a Stylus and that's different
 from the older one that was
 
 0:27:31.851,0:27:37.400
+后者不知道什么时候被某个奸商收购了
 called Stylish, because that one got
 bought at some point by some shady
 
 0:27:37.400,0:27:40.711
+然后被滥用，除了原来的功能外
 company, that started abusing it not only to have
 
 0:27:40.711,0:27:45.780
+还会读取你的整个浏览器历史记录
 that functionality, but also to read your
 entire browser history and send that
 
 0:27:45.780,0:27:48.491
+发送到ta们的服务器去做数据挖掘
 back to their servers so they could data mine it.
 
 0:27:48.491,0:27:53.731
+所以随后人们又写出了这个开源的替代品，叫做Stylus
 So, then people just built this open-source alternative
 that is called Stylus, and that's the one
 
 0:27:53.731,0:27:58.951
+这个才是我们推荐的
+说到这，我认为二者的样式库是一样的
 we recommend. Said that, I think the repository
 for styles is the same for the
 
 0:27:58.951,0:28:03.611
+但是我需要再三确认
 two of them, but I would have
 to double check that.
 
 0:28:03.611,0:28:05.951
+Anish，你安了什么浏览器插件吗？
 Do you have any browser plugins Anish?
 
 0:28:06.071,0:28:09.311
+是的，我也有一些推荐
 Yes, so I also have some recommendations
 for browser plugins
 
 0:28:09.311,0:28:13.991
+我也用uBlock Origin和Stylus
 I also use uBlock Origin and I also use Stylus,
 
 0:28:13.991,0:28:18.511
+我还想推荐的是整合进一个密码管理器
 but one other one that I'd recommend is
 integration with a password manager
 
 0:28:18.511,0:28:21.631
+这个是我们在有关安全的课程上的课程笔记中提过的一个话题
 So this is a topic that we have in
 the lecture notes for the security
 
 0:28:21.631,0:28:24.841
+但是我们没有详细讲
 lecture, but we didn't really get to talk
 about in detail. But basically password
 
 0:28:24.841,0:28:27.810
+但是基本上密码管理器有效保障了在线账户的安全
 managers do a really good job of increasing
 your security when working
 
 0:28:27.810,0:28:31.831
+将密码管理器整合进浏览器会节省你很多时间
 with online accounts, and having browser
 integration with your password manager
 
 0:28:31.831,0:28:34.410
+比如你打开一个网站
 can save you a lot of time like you
 can open up a website then it can
 
 0:28:34.410,0:28:37.381
+它可以自动填写你的登录信息
 autofill your login information for you
 sir and you go and copy and paste it
 
 0:28:37.381,0:28:40.320
+不需要你在其他没整合进浏览器的软件来回复制粘贴
 back and forth between a separate program
 if it's not integrated with your
 
 0:28:40.320,0:28:43.410
+这种整合也可以免去受到特定攻击的风险
 web browser, and it can also, this integration,
 can save you from certain
 
 0:28:43.410,0:28:47.651
+如果你手动复制粘贴，就可能受到这种攻击
 attacks that would otherwise be possible if
 you were doing this manual copy pasting.
 
 0:28:47.651,0:28:50.790
+比如钓鱼攻击
 For example, phishing attacks. So
 you find a website that looks very
 
 0:28:50.790,0:28:54.211
+你找到一个很像Facebook的网站，你想登陆进去
 similar to Facebook and you go to log in
 with your facebook login credentials and
 
 0:28:54.211,0:28:56.851
+你找到你的密码管理器，复制粘贴账号密码到这个搞笑网站
 you go to your password manager and copy
 paste the correct credentials into this
 
 0:28:56.851,0:29:00.060
+然后你的密码就泄露出去了
 funny web site and now all of a sudden
 it has your password but if you have
 
 0:29:00.060,0:29:03.091
+如果你用整合进浏览器的密码管理器
 browser integration then the extension
 can automatically check
 
 0:29:03.091,0:29:06.951
+它可以自动检查我是在真的facebook.com还是其他什么长得很像的网站
 like. Am I on F A C E B O O K.com,or
 is it some other domain
 
 0:29:06.951,0:29:10.671
+如果网址不对，它就不会填入登陆信息
 that maybe look similar and it will not enter
 the login information if it's the wrong domain
 
 0:29:10.671,0:29:15.791
+所以管理密码的浏览器插件是好的
 so browser extension for
 password managing is good
 
 0:29:15.791,0:29:17.930
+是的我同意
 Yeah I agree
 
 0:29:19.491,0:29:20.711
+下一个问题
 Next question
 
 0:29:20.711,0:29:23.991
+（问题）请问有其他有用的数据整理工具吗？
 What are other useful data wrangling tools?
 
 0:29:23.991,0:29:32.421
