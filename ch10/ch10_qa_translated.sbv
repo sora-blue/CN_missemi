@@ -1846,6 +1846,7 @@ have, where you have all your cookies
 
 0:26:20.601,0:26:24.560
 这些cookie都同时被不同的网站共享
+（注：Google I/O 2022提出了一个实验性的解决方案CHIPS）
 and they are kind of all shared from the
 different websites in the sense of
 
@@ -2069,385 +2070,488 @@ Yeah I agree
 Next question
 
 0:29:20.711,0:29:23.991
-（问题）请问有其他有用的数据整理工具吗？
+（问题）请问有其他有用的数据处理工具吗？
 What are other useful data wrangling tools?
 
 0:29:23.991,0:29:32.421
+在昨天的课程，我提到了curl，curl能发出web请求
 So in yesterday's lecture, I mentioned curl, so
 curl is a fantastic tool for just making web
 
 0:29:32.421,0:29:35.811
+并显示在你的终端上，是个很好的工具
 requests and dumping them to your terminal.
 You can also use it for things
 
 0:29:35.811,0:29:41.191
+你可以用它来上传文件等等，真的很方便
 like uploading files which is really handy.
 
 0:29:41.191,0:29:48.431
+在那节课的练习，我们也谈到了JQ和pup这些命令行工具
 In the exercises of that lecture we also talked about
 JQ and pup which are command line tools that let you
 
 0:29:48.431,0:29:52.991
+基本上可以让你分别在JSON和HTML文档上编写请求，也很方便
 basically write queries over JSON
 and HTML documents respectively
 
 0:29:52.991,0:30:00.391
+还有其他的数据处理工具吗？
 that can be really handy. Other
 data wrangling tools?
 
 0:30:00.391,0:30:03.821
+Perl，编程语言Perl
 Ah Perl, the Perl programming language is
 
 0:30:03.821,0:30:08.061
+Perl经常被称作“只写的编程语言”
 often referred to as a write only
 programming language because it's
 
 0:30:08.061,0:30:13.431
+因为你写完就读不懂它是什么意思了
 impossible to read even if you wrote it.
 But it is fantastic at doing just like
 
 0:30:13.431,0:30:21.561
+但是它很擅长做直接的文本处理，无人能敌
 straight up text processing, like nothing
 beats it there, so maybe worth learning
 
 0:30:21.561,0:30:24.331
+所以学习一些基础Perl写点脚本会很值
 some very rudimentary Perl just
 to write some of those scripts
 
 0:30:24.331,0:30:29.371
+通常比写一些旁门左道的grep awk sed的组合要容易得多
 It's easier often than writing some like hacked-up
 combination of grep and awk and sed,
 
 0:30:29.371,0:30:36.311
+举个例子，比用Python写东西解决问题也要快得多
 and it will be much faster to just tack something
 up than writing it up in Python, for example
 
 0:30:36.311,0:30:44.031
+但是除此之外，其他的数据处理……
 but apart from that, other data wrangling
 
 0:30:44.031,0:30:47.071
+没了，我真的想不起来
 No, not off the top of my head really
 
 0:30:47.071,0:30:53.661
+用column -t，如果你把用空格分开的输入通过管道（|）送给column -t
 column -t, if you pipe any white space separated
 
 0:30:53.661,0:30:58.821
+它会对齐每一列所有的空格
 input into column -t it will align all
 the white space of the columns so that
 
 0:30:58.821,0:31:05.771
+你会得到按列对得很齐整的数据，还有head和tail，我们之前讲过了
 you get nicely aligned columns that's, and
 head and tail but we talked about those
 
 0:31:09.011,0:31:13.791
+我还有一些补充，我自己经常用的
 I think a couple of additions to that,
 that I find myself using commonly
 
 0:31:13.791,0:31:19.881
+其中一个是vim，做文本处理相当好用
 one is vim. Vim can be pretty useful
 for like data wrangling on itself
 
 0:31:19.881,0:31:22.461
+有时你发现
 Sometimes you might find that the operation
 that you're trying to do is
 
 0:31:22.461,0:31:27.711
+你要执行的操作用管道一个一个执行就是不好弄
 hard to put down in terms of piping
 different operators but if you
 
 0:31:27.711,0:31:32.531
+但是如果你能直接打开文件
 can just open the file and just record
 
 0:31:32.531,0:31:37.301
+记住一系列vim宏来完成你想做的，它会非常非常简单
 a couple of quick vim macros to do what you
 want it to do, it might be like much,
 
 0:31:37.301,0:31:42.311
+这是一个，然后另一个，如果你在处理表格数据
 much easier. That's one, and then the other
 one, if you're dealing with tabular
 
 0:31:42.311,0:31:46.091
+你想完成一些更复杂的操作比如按某一列排序
 data and you want to do more complex operations
 like sorting by one column,
 
 0:31:46.091,0:31:51.161
+然后分组做一些统计计算
 then grouping and then computing some sort
 of statistic, I think a lot of that
 
 0:31:51.161,0:31:55.951
+大部分这种工作我直接用Python和pandas完成，
+因为它们就是为此而生的
 workload I ended up just using Python
 and pandas because it's built for that
 
 0:31:55.951,0:32:00.190
+其中一个我频繁使用的非常优雅的特性就是
 And one of the pretty neat features that
 I find myself also using is that it
 
 0:32:00.190,0:32:03.931
+它可以输出到很多不同格式
 will export to many different formats.
 So this intermediate state
 
 0:32:03.931,0:32:09.221
+对于这种中间的状态有它自己的pandas数据帧对象
 has its own kind of pandas dataframe
 object but it can
 
 0:32:09.221,0:32:14.171
+但是它可以导出为HTM LaTeX等等不同格式还有表格格式
 export to HTM, LaTeX, a lot of different
 like table formats so if your end
 
 0:32:14.171,0:32:19.531
+所以如果你的终端产物是某种总结表格，
+那么我想pandas是正合适你的工具
 product is some sort of summary table, then pandas
 I think it's a fantastic choice for that
 
 0:32:21.111,0:32:24.791
+我想再次推荐一下vim和Python
 I would second the vim and also
 Python I think those are
 
 0:32:24.791,0:32:29.051
+这两个是我最常用的数据处理工具
+对于vim，去年我们在课堂笔记系列里
 two of my most used data wrangling tools.
 For the vim one, last year we had a demo
 
 0:32:29.051,0:32:31.841
+做了一个demo，但是课上没讲
 in the series in the lecture notes, but
 we didn't cover it in class we had a
 
 0:32:31.841,0:32:38.051
+我们有一个把XML文件转换成JSON文件的demo，只用vim宏
 demo of turning an XML file into a JSON version
 of that same data using only vim macros
 
 0:32:38.051,0:32:40.331
+我认为这实际上是我会在生产环境中用它干的事
 And I think that's actually the
 way I would do it in practice
 
 0:32:40.331,0:32:43.241
+我不想花时间找一个这种工具
 I don't want to go find a tool that does
 this conversion it is actually simple
 
 0:32:43.241,0:32:45.431
+用vim宏写实际上很简单，我就这样做了
 to encode as a vim macro,
 then I just do it that way
 
 0:32:45.431,0:32:48.991
+然后Python尤其是在Jupyter notebook这种交互工具中
 And then also Python especially in an interactive
 tool like a Jupyter notebook
 
 0:32:48.991,0:32:51.171
+是很好的进行数据处理的工具
 is a really great way of doing data wrangling
 
 0:32:51.171,0:32:52.951
+我要提到的第三款工具
 A third tool I'd mention which
 I don't remember if we
 
 0:32:52.961,0:32:55.361
+不知道数据处理课或其他课上我们有没有讲过
 covered in the data wrangling
 lecture or elsewhere
 
 0:32:55.361,0:32:58.751
+是一个叫pandoc的工具，可以在不同文本文档格式之间转换
 is a tool called pandoc which can do transformations
 between different text
 
 0:32:58.751,0:33:02.981
+所以你可以把纯文本转换成HTML，或者把HTML转换成Markdown
 document formats so you can convert from
 plaintext to HTML or HTML to markdown
 
 0:33:02.981,0:33:07.361
+或者把LaTeX转换成HTML或其他各种格式
 or LaTeX to HTML or many other formats
 it actually it supports a large
 
 0:33:07.361,0:33:10.471
+实际上它支持大量格式，输入文件和输出文件
 list of input formats and a
 large list of output formats
 
 0:33:10.471,0:33:16.361
+最后还有一款工具，我们在数据处理课上简单提过一句
 I think there's one last one which I mentioned briefly
 in the lecture on data wrangling which is
 
 0:33:16.361,0:33:20.441
+就是R语言，这是个写起来很糟糕的语言（我认为它很糟糕）
 the R programming language, it's
 an awful (I think it's an awful)
 
 0:33:20.441,0:33:25.120
+我从来不会把它用在数据处理的流程中间
 language to program in. And i would never
 use it in the middle of a data wrangling
 
 0:33:25.120,0:33:30.951
+但是到最后，为了制作出好看的图表数据，R语言还是好用的
 pipeline, but at the end, in order to like produce
 pretty plots and statistics R is great
 
 0:33:30.951,0:33:35.581
+因为R语言就是为处理统计数字和生成图表而生的
 Because R is built for doing
 statistics and plotting
 
 0:33:35.581,0:33:40.591
+有个很棒的库叫ggplot
 there's a library for are called
 ggplot which is just amazing
 
 0:33:40.591,0:33:46.551
+ggplot2我猜也不错
 ggplot2 i guess technically It's
 great, it produces very
 
 0:33:46.551,0:33:51.431
+它能很好地把数据可视化，让你很容易完成一些事情
 nice visualizations and it lets you do,
 it does very easily do things like
 
 0:33:51.431,0:33:57.561
+比如你有一个数据集不止有一个维度，不止有X轴和Y轴
 If you have a data set that has like multiple
 facets like it's not just X and Y
 
 0:33:57.561,0:34:03.111
+就像同时有X Y Z和其他变量
 it's like X Y Z and some other variable,
 and then you want to plot like the
 
 0:34:03.111,0:34:07.581
+然后你想同时，比如说，用这些参数分组的生产量数据生成一个图表
 throughput grouped by all of those parameters
 at the same time and produce
 
 0:34:07.581,0:34:11.991
+将数据可视化，用R语言做这件事就很容易
 a visualization. R very easily let's you
 do this and I haven't seen anywhere
 
 0:34:11.991,0:34:14.891
+我没见到更好用的工具了
 that lets you do that as easily
 
 0:34:16.971,0:34:17.951
+下一个问题，
 Next question,
 
 0:34:17.951,0:34:20.511
+（问题）请问Docker和虚拟机之间有什么差别？
 What's the difference between
 Docker and a virtual machine
 
 0:34:23.271,0:34:27.731
+（问题）请用最简单的方法解释
 What's the easiest way to explain this? So docker
 
 0:34:27.741,0:34:31.221
+所以docker从容器入手
 starts something called containers and
 docker is not the only program that
 
 0:34:31.221,0:34:36.561
+但是docker不只是启动容器的程序，还有很多功能
 starts containers. There are many others
 and usually they rely on some feature of
 
 0:34:36.561,0:34:40.401
+在docker这个例子中这些功能依赖系统内核的一些特性
 the underlying kernel in the case of
 docker they use something called LXC
 
 0:34:40.401,0:34:47.571
+比如LXC，这是linux容器和基础功能的前提
 which are Linux containers and the basic
 premise there is if you want to start
 
 0:34:47.571,0:34:53.181
+如果你想要打开一个看起来像是虚拟机的东西
 what looks like a virtual machine that
 is running roughly the same operating
 
 0:34:53.181,0:34:57.411
+它和你的电脑上跑的操作系统基本上一样
 system as you are already running on your
 computer then you don't really need
 
 0:34:57.411,0:35:04.701
+然后你实际上不需要再跑一个内核的实例
+真的，其他虚拟机可以共享一个内核
 to run another instance of the kernel
 really that other virtual machine can
 
 0:35:04.701,0:35:09.951
+你可以直接使用在隔离机制下运行的内核
 share a kernel. And you can just use the
 kernels built in isolation mechanisms to
 
 0:35:09.951,0:35:13.791
+来启动一个程序，假设它在自己的硬件上运行
 spin up a program that thinks it's
 running on its own hardware but in
 
 0:35:13.791,0:35:18.501
+但实际上内核是共享的，所以这意味着
 reality it's sharing the kernel and so this
 means that containers can often run
 
 0:35:18.501,0:35:22.611
+容器的开销经常可以比一个完整的虚拟机少得多
 with much lower overhead than a full virtual
 machine will do but you should
 
 0:35:22.611,0:35:26.391
+但是你需要记住的是它到底还是有一些比较弱的隔离
 keep in mind that it also has somewhat weaker
 isolation because you are sharing
 
 0:35:26.391,0:35:30.831
+因为你在二者间共享一个内核
 a kernel between the two if you spin up
 a virtual machine the only thing that's
 
 0:35:30.831,0:35:35.931
+如果你启动一个虚拟机，唯一共享的是硬件，虚拟机监视器也可以算上
 shared is sort of the hardware and to
 some extent the hypervisor, whereas
 
 0:35:35.931,0:35:40.791
+与之相对，对于一个docker容器，共享的是整个内核
 with a docker container you're sharing
 the full kernel and the that is a
 
 0:35:40.791,0:35:44.921
+你需要记住，这是不同的风险模型
 different threat model that you
 might have to keep in mind
 
 0:35:47.341,0:35:52.361
+还有另一条小提示，就像Jon指出的那样
 One another small note there as Jon pointed
 out, to use containers something
 
 0:35:52.361,0:35:55.631
+使用类似Docker那样的容器，你需要让底层运行的操作系统大致一样
 like Docker you need the underlying operating
 system to be roughly the same
 
 0:35:55.631,0:36:00.071
+就像容器上跑的程序期望的运行环境那样
 as whatever the program that's running
 on top of the container expects and so
 
 0:36:00.071,0:36:03.791
+所以如果比如说，你在使用macOS，如果你想用docker
 if you're using macOS for example, the
 way you use docker is you run Linux
 
 0:36:03.791,0:36:08.261
+你就得在虚拟机上跑一个Linux，在这个Linux上跑Docker
 inside a virtual machine and then you can
 run Docker on top of Linux so maybe
 
 0:36:08.261,0:36:11.741
+所以可能，如果你为了更好的性能表现而选择容器
 if you're going for containers in order
 to get better performance your trading
 
 0:36:11.741,0:36:15.131
+就是在用隔离程度换性能表现
 isolation for performance if you're running
 on Mac OS that may not work out
 
 0:36:15.131,0:36:17.451
+如果你用的是macOS，事情可能并不顺心
 exactly as expected
 
 0:36:17.451,0:36:21.221
+最后一条要说的是二者有一点细微差别
 And one last note is that there
 is a slight difference, so
 
 0:36:21.221,0:36:25.721
+所以对于Docker和容器，其中一个你要格外留心的陷阱是
 with Docker and containers,
 one of the gotchas you have
 
 0:36:25.721,0:36:29.411
+容器看起来好像和虚拟机一样
 to be familiar with is that containers
 are more similar to virtual
 
 0:36:29.411,0:36:33.071
+好像会持久化你存储的所有东西
 machines in the sense of that they will
 persist all the storage that you
 
 0:36:33.071,0:36:35.971
+但是Docker默认并不会持久化
 have where Docker by default won't have that.
 
 0:36:35.971,0:36:37.791
+就像Docker只是在“运行”
 Like Docker is supposed to be running
 
 0:36:37.791,0:36:41.771
+所以我的意思是，我想运行某个软件
 So the main idea is like I want
 to run some software and
 
 0:36:41.771,0:36:45.671
+我获取到映像（image），我让它运行，
+如果你想让它持久化一些数据在宿主系统上
 I get the image and it runs and if you
 want to have any kind of persistent
 
 0:36:45.671,0:36:50.081
+你需要用某种方式手动指定
 storage that links to the host system
 you have to kind of manually specify
 
 0:36:50.081,0:36:56.051
+与之相对的是，一个虚拟机使用提供的某种虚拟磁盘
 that, whereas a virtual machine is using
 some virtual disk that is being provided
 
