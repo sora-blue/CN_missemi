@@ -793,7 +793,7 @@ So as we covered in the first lecture,
 there is this PATH environment variable
 
 0:10:45.091,0:10:49.551
-它用分号（冒号？）分隔开一些表示路径的字符串
+它用冒号分隔开一些表示路径的字符串
 which is a semicolon separated
 string of all the places
 
@@ -955,8 +955,8 @@ organized on Linux things or Linux or
 BSD things vary a little bit between
 
 0:13:05.071,0:13:07.151
-在它们和macOS或其他平台之间变化则很少
-that and macOS or other platforms
+在它们和Mac OS或其他平台之间变化则很少
+that and Mac OS or other platforms
 
 0:13:07.151,0:13:09.301
 我认为对于某个特定目录
@@ -2483,8 +2483,8 @@ as whatever the program that's running
 on top of the container expects and so
 
 0:36:00.071,0:36:03.791
-所以如果比如说，你在使用macOS，如果你想用docker
-if you're using macOS for example, the
+所以如果比如说，你在使用Mac OS，如果你想用docker
+if you're using Mac OS for example, the
 way you use docker is you run Linux
 
 0:36:03.791,0:36:08.261
@@ -2503,7 +2503,7 @@ isolation for performance if you're running
 on Mac OS that may not work out
 
 0:36:15.131,0:36:17.451
-如果你用的是macOS，事情可能并不顺心
+如果你用的是Mac OS，事情可能并不顺心
 exactly as expected
 
 0:36:17.451,0:36:21.221
@@ -2556,880 +2556,1110 @@ that, whereas a virtual machine is using
 some virtual disk that is being provided
 
 0:36:56.051,0:37:02.671
+下一个问题
 Next question
 
 0:37:02.671,0:37:05.111
+（问题）请问每个操作系统各自的优势是什么？
 What are the advantages of each operating system
 
 0:37:05.111,0:37:08.531
+（问题）我们如何在这些系统间进行挑选？
 and how can we choose between them?
 For example, choosing the best Linux
 
 0:37:08.531,0:37:10.551
+（问题）比如，选择最合适某种目的的Linux发行版
 distribution for our purposes
 
 0:37:14.251,0:37:16.811
+我要说对于很多很多任务
 I will say that for many, many tasks the
 
 0:37:16.811,0:37:20.171
+你跑哪个Linux发行版并不是那么重要
 specific Linux distribution that you're
 running is not that important
 
 0:37:20.171,0:37:23.731
+实际上，你只需要知道
 the thing is, it's just what kind of
 
 0:37:23.731,0:37:27.651
+有 很多种或者很多类 发行版就行了
 knowing that there are different types
 or like groups of distributions,
 
 0:37:27.651,0:37:32.251
+所以比如，有一些发行版更新很勤快
 So for example, there are some distributions
 that have really frequent updates
 
 0:37:32.251,0:37:38.971
+但是它们更容易出问题，比如Arch Linux用滚动更新的方式推送更新
 but they kind of break more easily. So for
 example Arch Linux has a rolling update
 
 0:37:38.971,0:37:43.511
+这样可能出问题，但是Arch Linux的用户都能接受
 way of pushing updates, where things might
 break but they're fine with the things
 
 0:37:43.511,0:37:47.891
+可能你真的有一些非常重要的服务器
 being that way. Where maybe where you
 have some really important web server
 
 0:37:47.891,0:37:51.401
+存放着你所有的商业分析数据
 that is hosting all your business
 analytics you want that thing
 
 0:37:51.401,0:37:55.961
+你就会想要一种更稳定的更新方式
 to have like a much more steady way of
 updates. So that's for example why you
 
 0:37:55.961,0:37:58.121
+所以这就是为什么比如说你会发现有些发行版
 will see distributions like Debian being
 
 0:37:58.121,0:38:02.951
+像Debian对于他们推送的更新就要保守得多
 much more conservative about what they push, or
 even for example Ubuntu makes a difference
 
 0:38:02.951,0:38:07.001
+甚至Ubuntu也做了区分，长期版本两年才更新一次
 between the Long Term Releases
 that they are only update every
 
 0:38:07.001,0:38:12.281
+更定期的版本一年更新两次
 two years and the more periodic
 releases of one there is a
 
 0:38:12.281,0:38:16.661
+所以，大概知道有这种区别就行
 it's like two a year that they make.
 So, kind of knowing that there's the
 
 0:38:16.661,0:38:21.341
+除此之外，一些发行版提供二进制程序的方式不同
 difference apart from that some distributions
 have different ways
 
 0:38:21.341,0:38:27.191
+他们采用的仓库也不同
 of providing the binaries
 to you and the way they
 
 0:38:27.191,0:38:33.791
+我认为很多Red Hat Linux的开发者不想让收费驱动出现在他们的官方仓库上
 have the repositories so I think a lot of Red
 Hat Linux don't want non free drivers in
 
 0:38:33.791,0:38:37.361
+Ubuntu就会包容一部分这类软件
 their official repositories where I
 think Ubuntu is fine with some of
 
 0:38:37.361,0:38:42.491
+其他的我想很多核心的软件包在不同Linux发行版间应该是共享的
 them, apart from that I think like just
 a lot of what is core to most Linux
 
 0:38:42.491,0:38:47.411
+在共同的基础上有很多可以相互借鉴的东西
 distros is kind of shared between them
 and there's a lot of learning in the
 
 0:38:47.411,0:38:51.431
+所以你不必为一些特性担心
 common ground. So you don't have
 to worry about the specifics
 
 0:38:52.391,0:38:56.351
+我可能有点固执己见，与这门课的主题有点不同
 Keeping with the theme of this class being somewhat
 opinionated, I'm gonna go ahead and say
 
 0:38:56.351,0:39:00.041
+不过我还是要说，如果你用Linux，尤其是第一次用
 that if you're using Linux especially for
 the first time choose something like
 
 0:39:00.041,0:39:03.851
+建议选择Ubuntu或Debian，Ubuntu是基于Debian的发行版
 Ubuntu or Debian. So you Ubuntu to is a
 Debian based distribution but maybe is a
 
 0:39:03.851,0:39:07.421
+但是可能更友好，Debian有点太精简了
 little bit more friendly, Debian is a little
 bit more minimalist. I use Debian
 
 0:39:07.421,0:39:10.451
+举个例子，我在我的服务器上都用Debian，
+在跑Linux的台式机上用Debian系统
 and all my servers, for example. And I use
 Debian desktop on my desktop computers
 
 0:39:10.451,0:39:15.431
+如果你是想尽量多学点东西
 that run Linux if you're going for maybe
 trying to learn more things and you want
 
 0:39:15.431,0:39:19.391
+你想要一个不够稳定，但更新更及时的系统
 a distribution that trades stability for
 having more up-to-date software maybe
 
 0:39:19.391,0:39:21.911
+不惜冒着需要隔三差五修复损坏系统的风险
 at the expense of you having to fix a
 broken distribution every once in a
 
 0:39:21.911,0:39:26.911
+好的那可能你可以考虑用Arch Linux或者Gentoo或者Slackware
 while then maybe you can consider something
 like Arch Linux or Gentoo
 
 0:39:26.911,0:39:32.681
+听着，如果你正在安装Linux，只想完成工作
 or Slackware. Oh man, I'd say that like
 if you're installing Linux and just like
 
 0:39:32.681,0:39:34.891
+Debian是个很棒的选择
 want to get work done Debian is a great choice
 
 0:39:35.911,0:39:38.271
+是的我也同意
 Yeah I think I agree with that.
 
 0:39:38.271,0:39:40.971
+其他要说的，比如你不能安装BSD
 The other observation is like
 you couldn't install BSD
 
 0:39:40.971,0:39:46.691
+BSD已经，和它原来的样子偏离太远了
 BSD has gotten, has come a long way from
 where it was. There's still a bunch of
 
 0:39:46.691,0:39:50.921
+目前仍然有很多软件不能在BSD上跑
 software you can't really get for BSD but
 it gives you a very well-documented
 
 0:39:50.921,0:39:55.841
+但是BSD文档体验很好，而且BSD和Linux不同的一点是
 experience and and one thing that's different
 about BSD compared to Linux is
 
 0:39:55.841,0:40:02.531
+当你安装BSD时，你会得到一个完整的操作系统
 that in an BSD when you install BSD you
 get a full operating system, mostly
 
 0:40:02.651,0:40:07.531
+大量的软件都由内核团队维护
 So many of the programs are maintained by
 the same team that maintains the kernel
 
 0:40:07.541,0:40:11.351
+所有东西都像是一起更新
 and everything is sort of upgraded together,
 which is a little different
 
 0:40:11.351,0:40:13.271
+这和Linux世界的方式有点不同
 than how thanks work in the Linux world it does
 
 0:40:13.271,0:40:16.751
+这肯定意味着开发进度会有点慢
 mean that things often move a little bit
 slower. I would not use it for things
 
 0:40:16.751,0:40:21.791
+我肯定不会用BSD打游戏，因为驱动支持就……嗯
 like gaming either, because drivers support
 is meh. But it is an interesting
 
 0:40:21.791,0:40:30.661
+但是BSD研究起来很有意思
 environment to look at. And then for things
 like Mac OS and Windows I think
 
 0:40:30.661,0:40:36.041
+然后对与Mac OS和Windows这类系统，如果你是个程序员
 If you are a programmer, I don't know why
 you are using Windows unless you are
 
 0:40:36.041,0:40:42.401
+除非你开发Windows软件，我不知道为什么你用Windows，
+也可能你想玩游戏等等
 building things for Windows; or you want
 to be able to do gaming and stuff
 
 0:40:42.401,0:40:46.891
+但是如果是那种情况，试试装个双系统，虽然配置起来挺痛苦
 but in that case, maybe try dual booting,
 even though that's a pain too
 
 0:40:46.891,0:40:52.031
+Mac OS在二者间做到了平衡
 Mac OS is a is a good sort of middle point
 between the two where you get a system
 
 0:40:52.031,0:40:57.851
+相对来说系统设计得也比较优雅
 that is like relatively nicely polished
 for you. But you still have access to
 
 0:40:57.851,0:41:01.191
+但是至少在某种程度上你还可以接触到一些系统底层
 some of the lower-level bits
 at least to a certain extent.
 
 0:41:01.191,0:41:07.451
+装Mac OS和Windows双系统也很容易
 it's also really easy to dual boot Mac OS and Windows
 it is not quite the case with like Mac OS and
 
 0:41:07.451,0:41:09.651
+装Mac OS和Linux或Linux和Windows双系统就不一定了
 Linux or Linux and Windows
 
 0:41:13.911,0:41:15.751
+好的，剩下的问题都没人投票
 Alright, for the rest of the
 questions so these are
 
 0:41:15.761,0:41:18.761
+那么我们就用课上剩下的五分钟左右快速过一遍
 all 0 upvote questions so maybe we can go
 through them quickly in the last five
 
 0:41:18.761,0:41:23.471
+所以下一个问题是Vim和Emacs谁好用？当然是Vim，这还用说
 or so minutes of class. So the next
 one is Vim versus Emacs? Vim!
 
 0:41:23.471,0:41:30.911
+要回答得认真点，那就是我们三都用vim作为主力编辑器
 Easy answer, but a more serious answer is like I think
 all three of us use vim as our primary editor
 
 0:41:30.911,0:41:34.931
+有时候一些特定领域的研究要用Emacs，我就用Emacs
 I use Emacs for some research specific
 stuff which requires Emacs but
 
 0:41:34.931,0:41:38.681
+但是站在更高的角度来说，两个编辑器的设计思想都很有趣
 at a higher level both editors have interesting
 ideas behind them and if you
 
 0:41:38.681,0:41:43.061
+如果你有空，可以试试看哪个编辑器最适合你
 have the time is worth exploring both
 to see which fits you better and also
 
 0:41:43.061,0:41:46.811
+你也可以用Emacs跑vim模式
 you can use Emacs and run it in a vim
 emulation mode. I actually know a
 
 0:41:46.811,0:41:49.091
+我知道有相当数量的人这样用
 good number of people who do that so
 they get access to some of the cool
 
 0:41:49.091,0:41:52.631
+一边享受Emacs的一些独特功能和背后的独到哲学
 Emacs functionality and some of the cool
 philosophy behind that like Emacs is
 
 0:41:52.631,0:41:55.391
+比如Emacs可以用Lisp编程，这有点酷，比vimscript好多了
 programmable through Lisp which is kind of cool.
 
 0:41:55.391,0:41:59.411
+但人们喜欢vim的不同模式
 Much better than vimscript, but people like
 vim's modal editing, so there's an
 
 0:41:59.411,0:42:04.481
+所以有个Emacs插件叫evil mode，让你在Emacs里用vim的各种模式
 emacs plugin called evil mode which gives
 you vim modal editing within Emacs so
 
 0:42:04.481,0:42:08.081
+不一定非要做一个折中的选择，你可以选择将二者结合
 it's not necessarily a binary choice you
 can kind of combine both tools if you
 
 0:42:08.081,0:42:11.151
+如果你有空，两个都试一试也是值当的
 want to. And it's worth exploring
 both if you have the time.
 
 0:42:11.151,0:42:12.731
+下一个问题
 Next question
 
 0:42:12.731,0:42:15.671
+（问题）请问有什么机器学习应用的建议或窍门吗？
 Any tips or tricks for machine
 learning applications?
 
 0:42:19.271,0:42:22.351
+我觉得吧，知道很多工具
 I think, like knowing how
 
 0:42:22.361,0:42:24.791
+主要是这些做数据处理的shell工具
 a lot of these tools, mainly the data wrangling
 
 0:42:24.791,0:42:30.041
+这个真的很重要，因为作为机器学习研究员的大部分工作
 a lot of the shell tools, it's really
 important because it seems a lot
 
 0:42:30.041,0:42:33.851
+看上去都是在尝试不同的事物
 of what you're doing as machine learning
 researcher is trying different things
 
 0:42:33.851,0:42:39.491
+但是做这件事有一个核心要点，就像很多科学成果
 but I think one core aspect of doing that,
 and like a lot of scientific work is being
 
 0:42:39.491,0:42:44.501
+需要能够被复现，需要合理的记录
 able to have reproducible results
 and logging them in a sensible way
 
 0:42:44.501,0:42:47.711
+所以比如说，不需要多离谱的方式命名文件夹
 So for example, instead of trying to come
 up with really hacky solutions of how
 
 0:42:47.711,0:42:51.151
+不需要用这样区分开不同的实验
 you name your folders to make
 sense of the experiments
 
 0:42:51.151,0:42:53.251
+或许只需要，比如说
 Maybe it's just worth having for example
 
 0:42:53.251,0:42:55.931
+我自己的话就是用一个JSON文件来描述整个实验我知道的部分
 what I do is have like a JSON
 file that describes the
 
 0:42:55.931,0:43:00.371
+比如说所有的参数都在里面
 entire experiment I know like all the parameters
 that are within and then I can
 
 0:43:00.371,0:43:05.111
+然后我可以很熟练地使用我们讲到的各种工具
 really quickly, using the tools that
 we have covered, query for all the
 
 0:43:05.111,0:43:09.701
+来找出有某种特定目的或用了某种数据集的所有实验，就像这样
 experiments that have some specific
 purpose or use some data set
 
 0:43:09.701,0:43:15.071
+除此之外，另一件事是
 Things like that. Apart from that, the other
 side of this is, if you are running
 
 0:43:15.071,0:43:19.871
+如果你在跑像是机器学习训练应用之类的东西
 kind of things for training machine
 learning applications and you
 
 0:43:19.871,0:43:23.981
+你还没有用上集群之类的，像是大学或公司会提供的设施
 are not already using some sort of
 cluster, like university or your
 
 0:43:23.981,0:43:28.301
+只是手动ssh操作，就像做很多实验的时候你做的
 company is providing and you're just kind
 of manually sshing, like a lot of
 
 0:43:28.301,0:43:31.231
+因为这样比较简单
 labs do, because that's kind of the easy way
 
 0:43:31.231,0:43:36.671
+试着把很多这种工作自动化，你会发现这是值得的，虽然表面上可能看上去不是这样的
 It's worth automating a lot of that job
 because it might not seem like it but
 
 0:43:36.671,0:43:40.601
+但是手动做大部分这些杂活占去了很多时间
 manually doing a lot of these operations
 takes away a lot of your time and also
 
 0:43:40.601,0:43:45.031
+还有你做这些琐事的精力
 kind of your mental energy
 for running these things
 
 0:43:48.551,0:43:51.691
+（问题）更多vim的使用小贴士？
 Anymore vim tips?
 
 0:43:51.691,0:43:56.771
+正好我有一条要说：在vim课上我们尽量没提太多花里胡哨的vim插件
 I have one. So in the vim lecture we tried
 not to link you to too many different
 
 0:43:56.771,0:44:00.131
+因为我们不想让这节课太劝退
 vim plugins because we didn't want that
 lecture to be overwhelming but I think
 
 0:44:00.131,0:44:02.921
+但是我认为实际上值得探索一下使用vim插件
 it's actually worth exploring vim plugins
 because there are lots and lots
 
 0:44:02.921,0:44:07.091
+因为有很多很多真的酷炫的插件
 of really cool ones out there.
 One resource you can use is the
 
 0:44:07.091,0:44:10.571
+你可以用dotfile里的各种不同指令来设置，像我们很多人
 different instructors dotfiles like a lot
 of us, I think I use like two dozen
 
 0:44:10.571,0:44:14.321
+我用了二十个vim插件，很多都很有用，我天天用
 vim plugins and I find a lot of them quite
 helpful and I use them every day
 
 0:44:14.321,0:44:18.311
+我们几乎都用这些插件，除了一些细微的差别
 we all use slightly different subsets of
 them. So go look at what we use or look
 
 0:44:18.311,0:44:22.131
+所以看一下我们用的或我们介绍的其他资源，你可能找到一些有用的东西
 at some of the other resources we've linked
 to and you might find some stuff useful
 
 0:44:22.791,0:44:26.951
+还有一件事是，我认为我们在课上没有涉及太多细节，如果我错了请纠正
 A thing to add to that is, I don't think
 we went into a lot detail in the
 
 0:44:27.041,0:44:31.571
+你需要熟悉vim的前缀键（leader key）
 lecture, correct me if I'm wrong. It's
 getting familiar with the leader key
 
 0:44:31.571,0:44:35.021
+这是一种特殊的键位，很多程序尤其是插件会关联到一个前缀键
 Which is kind of a special key
 that a lot of programs will
 
 0:44:35.021,0:44:39.081
+还有很多常规的操作，vim有一些简单的默认键位来做这件事
 especially plugins, that will link to
 and for a lot of the common operations
 
 0:44:39.081,0:44:44.661
+但是你也可以找到更快的键位
 vim has short ways of doing it, but you
 can just figure out like quicker
 
 0:44:44.661,0:44:50.031
+所以比如说，你可以用:WQ保存退出
 versions for doing them. So for example, like
 I know that you can do like semicolon WQ
 
 0:44:50.031,0:44:55.521
+也可以用大写ZZ保存退出
 to save and exit or that you
 can do like capital ZZ but I
 
 0:44:55.521,0:44:59.241
+但是实际上可以设置一个前缀键（我用的是空格）然后一个W
 just actually just do leader (which for
 me is the space) and then W. And I have
 
 0:44:59.241,0:45:04.131
+我一直坚持把很多很多常规操作都换成自己设置的键位
 done that for a lot of a lot of kind of
 common operations that I keep doing all
 
 0:45:04.131,0:45:08.091
+因为只敲击一下键盘来执行非常常规的操作
 the time. Because just saving one keystroke
 for an extremely common operation
 
 0:45:08.091,0:45:11.371
+一个月就能少打上千次键盘
 is just saving thousands a month
 
 0:45:11.371,0:45:12.951
+稍微扩展一下讲一下前缀键是什么
 Yeah just to expand a little bit
 
 0:45:12.951,0:45:17.031
+在vim你可以手动绑定一些键位，比如我可以设置Ctrl+J
 on what the leader key is so in vim you
 can bind some keys I can do like ctrl J
 
 0:45:17.031,0:45:20.481
+设置长摁一个键位再摁另一个
 does something like holding one key and
 then pressing another I can bind that to
 
 0:45:20.481,0:45:23.781
+我可以把这个键位绑定到某种操作上，也可以绑定单个键位
 something or I can bind a single keystroke
 to something. What the leader
 
 0:45:23.781,0:45:26.031
+前缀键能让你做的就是绑定键位
 key lets you do, is bind
 
 0:45:26.031,0:45:28.311
+所以你可以随便选一个键位当前缀键
 So you can assign any key
 to be the leader key and
 
 0:45:28.311,0:45:32.841
+然后选其他什么键位组合来执行一些操作
 then you can assign leader followed by
 some other key to some action so for
 
 0:45:32.841,0:45:36.831
+比如说Jose的前缀键是空格，就可以在前面带上空格
 example like Jose's leader key is space
 and they can combine space and then
 
 0:45:36.831,0:45:41.601
+后面设置其他一些键位，和任意一条vim命令绑定
 releasing space followed by some other
 key to an arbitrary vim command so it
 
 0:45:41.601,0:45:45.631
+所以前缀键只是给你另一种绑定键位的方式，像是一整套键位
 just gives you yet another way of binding
 like a whole set of key combinations.
 
 0:45:45.631,0:45:49.751
+前缀键+其他什么键=某种功能
 Leader key plus kind of any key on
 the keyboard to some functionality
 
 0:45:49.751,0:45:53.751
+可能我忘了我们有没有讲过vim的宏
 I think I've I forget whether
 we covered macros in the vim
 
 0:45:53.751,0:45:58.581
+vim宏很值得学习，它没有那么复杂
 uh sure but like vim macros are worth
 learning they're not that complicated
 
 0:45:58.581,0:46:03.141
+知道有vim宏这种特性、知道怎么用它们，将会节省你很多时间
 but knowing that they're there and knowing
 how to use them is going to save
 
 0:46:03.141,0:46:09.501
+还有一个特性是标记（marks）
 you so much time. The other one is something
 called marks. So in vim you can
 
 0:46:09.501,0:46:13.491
+在vim你可以按m键+其他字母，在当前文件上做个标记
 press m and then any letter on your keyboard
 to make a mark in that file and
 
 0:46:13.491,0:46:18.021
+然后你可以按'键+同样的字母跳回同一个位置
 then you can press apostrophe on the
 same letter to jump back to the same
 
 0:46:18.021,0:46:21.801
+当你，比如说，在代码的两个不同部分来回切换的时候，这个特性很有用
 place. This is really useful if you're
 like moving back and forth
 
 0:46:21.801,0:46:25.491
+你可以标记一个部分是A，一个部分是B
 between two different parts of your code
 for example. You can mark one as A and
 
 0:46:25.491,0:46:29.611
+按A或按B，你就可以在它们之间来回跳
 one as B and you can then jump between
 them with tick A and tick B.
 
 0:46:29.611,0:46:34.851
+还有一个快捷键Ctrl+O来跳回之前的位置，不论你是怎么换位置的
 There's also Ctrl+O which jumps to the previous
 place you were in the file no matter
 
 0:46:34.851,0:46:40.611
+所以比如说我在某一行，我跳到了标记B，然后跳到了标记A
 what caused you to move. So for example
 if I am in a some line and then I jump
 
 0:46:40.611,0:46:45.201
+Ctrl+O会带我返回标记B，然后返回原来的地方
 to B and then I jump to A, Ctrl+O will
 take me back to B and then back to the
 
 0:46:45.201,0:46:48.831
+这也是一个很方便的特性，比如说你在搜索什么东西
 place I originally was. This can also be
 handy for things like if you're doing a
 
 0:46:48.831,0:46:52.671
+你开始搜索的地方也是这个“栈”的一部分
 search then the place that you
 started the search is a part of
 
 0:46:52.671,0:46:56.211
+所以我可以进行一次搜索，一个一个看搜索结果
 that stack. So I can do a search I can
 then like step through the results
 
 0:46:56.211,0:47:00.801
+做些修改，然后Ctrl+O一路倒回开始搜索的地方
 and like change them and then Ctrl+O
 all the way back up to the search
 
 0:47:00.801,0:47:06.201
+Ctrl+O也可以在文件之间跳转
 Ctrl+O also lets you move across files so
 if I go from one file to somewhere else in
 
 0:47:06.201,0:47:09.681
+所以如果我从一个文件跳到另一个文件的什么地方，然后跳回到这个文件的什么地方
 different file and somewhere else in the
 first file Ctrl+O will move me back
 
 0:47:09.681,0:47:15.261
+Ctrl+O会通过这个“栈”返回原来的位置，还有一个Ctrl+I正好相反
 through that stack and then there's
 Ctrl+I to move forward in that
 
 0:47:15.261,0:47:20.841
+所以不是从“栈”里弹出，你就回不去那个位置了
 stack and so it's not as though you
 pop it and it goes away forever
 
 0:47:20.841,0:47:26.541
+命令:earlier也很方便，可以给到你同一个文件稍早时间的副本
 The command colon earlier is really handy.
 So, colon earlier gives you an earlier
 
 0:47:26.541,0:47:32.870
+vim按时间而不是按操作保存这个副本
 version of the same file and it it does
 this based on time not based on actions
 
 0:47:32.870,0:47:36.651
+所以比如说你进行了一大堆undo/redo操作，做了一些修改等等
 so for example if you press a bunch of like
 undo and redo and make some changes
 
 0:47:36.651,0:47:42.561
+earlier会像字面上一样，将稍早时间备份的内容恢复到你的缓冲区
 and stuff, earlier will take a literally
 earlier as in time version of your file
 
 0:47:42.561,0:47:46.971
+有时候这个特性真的很棒，比如你撤销重写了一部分
 and restore it to your buffer. This can
 sometimes be good if you like undid and
 
 0:47:46.971,0:47:50.841
+然后觉得之前的版本其实还不错
 then rewrote something and then realize
 you actually wanted the version that was
 
 0:47:50.841,0:47:55.100
+有个插件叫undo tree还是什么来着
 there before you started undoing earlier
 let's you do this. And there's a plug-in
 
 0:47:55.100,0:48:01.971
+有一些这种插件
 called undo tree or something like
 that There are several of these,
 
 0:48:01.971,0:48:05.781
+让你可以以树的形式查看vim保存的全部undo历史记录
 that let you actually explore the full
 tree of undo history the vim keeps
 
 0:48:05.781,0:48:09.201
+因为vim不是只保存一个线性的历史记录，实际上保存着整个操作树
 because it doesn't just keep a linear history
 it actually keeps the full tree
 
 0:48:09.201,0:48:12.771
+知道了这些，某些情况下就能省去重新打字的麻烦
 and letting you explore that might in
 some cases save you from having to
 
 0:48:12.771,0:48:16.461
+不需要把过去打的再打一遍
 re-type stuff you typed in the past or
 stuff you just forgot exactly what you
 
 0:48:16.461,0:48:21.081
+也不需要把原来正常运行，少了后不能正常运行的、忘了的部分再打一遍
 had there that used to work and no longer
 works. And this is one final one I
 
 0:48:21.081,0:48:26.751
+最后想提的是，我们提到在vim有“动词”和“名词”
 want to mention which is, we mentioned
 how in vim you have verbs and nouns
 
 0:48:26.751,0:48:33.201
+就像英语里的动词delete和yank，然后名词有
 right to your verbs like delete or yank
 and then you have nouns like next of
 
 0:48:33.201,0:48:37.401
+“下一个字母”或者“交换括号的百分比”等等
 this character or percent to swap brackets
 and that sort of stuff the
 
 0:48:37.401,0:48:44.571
+搜索命令是一个名词，所以你可以输入"d/"+一个模式字符串
 search command is a noun so you can do
 things like D slash and then a string
 
 0:48:44.571,0:48:50.261
+然后vim就会把直到下一个匹配这个模式的地方出现的部分都删掉
 and it will delete up to the next match
 of that pattern this is extremely useful
 
 0:48:50.261,0:48:54.251
+这很有用，我一直都这样用
 and I use it all the time
 
 0:48:58.500,0:49:03.520
+关于undo，还有一个我每天都用得很舒服的优雅的特性是
 One another neat addition on the undo stuff
 that I find incredibly valuable in
 
 0:49:03.520,0:49:08.201
+vim内置的一个功能是
 an everyday basis is that like one of
 the built-in functionalities of vim
 
 0:49:08.201,0:49:13.510
+你可以指定一个“undo文件夹”
 is that you can specify an undo directory
 and if you have a specified an
 
 0:49:13.510,0:49:17.620
+vim默认没有指定，如果你没开这个特性
 undo directory by default vim, if you
 don't have this enabled, whenever you
 
 0:49:17.620,0:49:23.091
+每次打开一个文件，你的undo历史记录都会被清理得一干二净
 enter a file your undo history is
 clean, there's nothing in there
 
 0:49:23.091,0:49:26.371
+如果你进行修改，然后撤销修改，vim会生成编辑的历史记录
 and as you make changes and then
 undo them you kind of create this
 
 0:49:26.380,0:49:32.800
+但是一旦你退出编辑，编辑的历史记录就没了
 history but as soon as you exit the
 file that's lost. Sorry, as soon
 
 0:49:32.800,0:49:37.181
+不好意思，一退出，就没了
 as you exit vim, that's lost. However
 if you have an undodir, vim is
 
 0:49:37.181,0:49:41.651
+然而，如果你设置了undodir，
+vim就会把所有这些更改保存到那个文件夹
 gonna persist all those changes into
 this directory so no matter how many
 
 0:49:41.651,0:49:45.580
+不管你退出重进多少次，历史记录都会给你存着
 times you enter and leave that history
 is persisted and it's incredibly
 
 0:49:45.580,0:49:48.191
+这特别有用
 helpful because even like
 
 0:49:48.191,0:49:50.290
+特别是对于你经常修改的一些文件
 it can be very helpful for
 some files that you modify
 
 0:49:50.290,0:49:54.760
+因为你可以一定程度上保存修改记录流
 often because then you can kind of keep
 the flow. But it's also sometimes really
 
 0:49:54.760,0:50:00.010
+如果你修改了bashrc文件，5天后发现有些东西不好使了
 helpful if you modify your bashrc see and
 something broke like five days later and
 
 0:50:00.010,0:50:03.070
+再次打开vim，这个功能也能派上用场，像是找出我到底改了什么
 then you've vim again. Like what actually
 did I change ,if you don't
 
 0:50:03.070,0:50:06.760
+如果你没有做版本控制，也可以参考undo历史记录
 have say like version control, then
 you can just check the undos and
 
 0:50:06.760,0:50:10.661
+就能找出出错的原因
 that's actually what happened. And
 the last one, it's also really
 
 0:50:10.661,0:50:14.891
+还有一件事，熟练使用vim的寄存器和熟知vim的特殊寄存器也很有用
 worth familiarizing yourself with registers
 and what different special
 
 0:50:14.891,0:50:20.380
+所以比如说，如果你想复制粘贴
 registers vim uses. So for example if
 you want to copy/paste really that's
 
 0:50:20.380,0:50:26.201
+复制粘贴的内容会存进某种特殊的寄存器
 gone into in a specific register and if you
 want to for example use the a OS a copy
 
 0:50:26.201,0:50:30.040
+如果你想使用系统自带的剪贴板
 like the OS clipboard, you should
 be copying or yanking
 
 0:50:30.040,0:50:36.250
+就需要使用一个不同的寄存器，这样的还有很多
 copying and pasting from a different register
 and there's a lot of them and yeah
 
 0:50:36.251,0:50:41.310
+我认为你应该探索一下，关于vim的寄存器有很多需要了解
 I think that you should explore, there's
 a lot of things to know about registers
 
 0:50:42.271,0:50:45.070
+下一个问题是关于两步验证的
 The next question is asking about two-factor
 authentication and I'll just give
 
 0:50:45.070,0:50:48.490
+考虑到剩下的时间，我快速回答一下
 a very quick answer to this one in the interest
 of time. So it's worth using two
 
 0:50:48.490,0:50:52.480
+对于任何敏感的需要安全防护的，可以用两步验证
 factor auth for anything security sensitive
 so I use it for my GitHub
 
 0:50:52.480,0:50:56.710
+我在GitHub账户和邮箱等等就用了两步验证
 account and for my email and stuff like
 that. And there's a bunch of different
 
 0:50:56.710,0:51:01.360
+有一大堆不同类型的两步验证，有基于短信的2FA
 types of two-factor auth. From SMS based
 to factor auth where you get special
 
 0:51:01.360,0:51:04.630
+你会收到发给你的一个数字，当你想登陆进去时，你需要输入这个数字
 like a number texted to you when you try
 to log in you have to type that number
 
 0:51:04.630,0:51:08.710
+其他的一些工具比如U2F，比如需要插进电脑的Yubikey
 and to other tools like universal to
 factor this is like those Yubikeys
 
 0:51:08.710,0:51:11.350
+每次登陆时都需要按一下
 that you plug into your you have
 to tap it every time you login
 
 0:51:11.350,0:51:18.130
+所以不是全部（是的Jon有个Yubikey），不是所有的2FA都一样
 so not all, (yeah Jon is holding a
 Yubikey), not all two-factor auth is
 
 0:51:18.130,0:51:22.240
+比起基于短信的2FA，你会更想用U2F之类的来验证
 created equal and you really want to be
 using something like U2F rather than SMS
 
 0:51:22.240,0:51:25.300
+一些是基于一次性的代码，你需要手动输进去
 based to factor auth. There something
 based on one-time pass codes that you
 
 0:51:25.300,0:51:28.810
+我们没有时间讨论为什么一些方法更好这些细节
 have to type in we don't have time to get
 into the details of why some methods
 
 0:51:28.810,0:51:32.020
+但是概括来说，用U2F就对了
 are better than others but at a high
 level use U2F and the Internet has
 
 0:51:32.020,0:51:37.560
+网上有很多解释了为什么其他方法不是个好主意
 plenty of explanations for why other
 methods are not a great idea
 
 0:51:37.711,0:51:41.851
+最后一个问题：关于浏览器之间的差异有要说的吗？
 Last question, any comments on differences
 between web browsers?
 
 0:51:48.171,0:51:50.171
+是的
 Yes
 
 0:51:54.711,0:52:00.451
+关于浏览器之间的差异，现在这些差异越来越少了
 Differences between web browsers, there
 are fewer and fewer differences between
 
 0:52:00.461,0:52:06.000
+这时候几乎所有浏览器都是Chrome
 web browsers these day. At this point
 almost all web browsers are chrome
 
 0:52:06.000,0:52:09.580
+也许是你用Chrome，也许是你用和Chrome用一个引擎的浏览器
 Either because you're using Chrome or
 because you're using a browser that's
 
 0:52:09.580,0:52:15.550
+可能有人觉得这有点令人伤心
 using the same browser engine as Chrome.
 It's a little bit sad, one might say, but
 
 0:52:15.550,0:52:20.511
+但是我认为现在，不管你选择哪家浏览器
 I think these days whether you choose
 
 0:52:20.511,0:52:24.451
+Chrome是个在安全方面做的很好的浏览器
 Chrome is a great browser for security reasons
 
 0:52:24.451,0:52:28.471
+如果你想更个性化一点
 if you want to have something
 that's more customizable or
 
 0:52:28.471,0:52:39.490
+不想被Google绑的死死的，那就用Firefox
 you don't want to be tied to Google then
 use Firefox, don't use Safari it's a
 
 0:52:39.490,0:52:45.701
+不要用Safari，这是个丐版Chrome
 worse version of Chrome. The new Internet
 Explorer edge is pretty decent and also
 
 0:52:45.701,0:52:50.820
+新的浏览器Edge很优雅，和Chrome用一个浏览器引擎，大概也行
 uses the same browser engine as
 Chrome and that's probably fine
 
 0:52:50.820,0:52:54.641
+但是尽量远离它，因为它有些你不想折腾的“传统模式”等等
 although avoid it if you can because it
 has some like legacy modes you don't
 
 0:52:54.641,0:52:58.064
+我认为这
 want to deal with. I think that's
 
 0:52:58.064,0:53:03.091
+哦，还有一个炫酷的新浏览器叫flow
 Oh, there's a cool new browser called flow
 
 0:53:03.091,0:53:05.500
+现在这个还不够实用
 that you can't use for anything useful
 yet but they're actually writing
 
 0:53:05.500,0:53:08.693
+但是他们真的在编写自己的浏览器引擎，这很棒
 their own browser engine and that's really neat
 
 0:53:08.693,0:53:14.951
+Firefox也有一个类型的项目叫servo，也是真的在自主研发浏览器引擎
 Firefox also has this project called servo which is
 they're really implementing their browser engine
 
 0:53:14.951,0:53:19.570
+这些开发人员用Rust编写这个引擎以期达到最大程度的并行
 in Rust in order to write it to be like
 super concurrent and what they've done
 
 0:53:19.570,0:53:24.961
+ta们做的是开始从某个版本提取模块
 is they've started to take modules
 from that version and port them
 
 0:53:24.961,0:53:29.041
+移植到或整合进Firefox研发的浏览器引擎gecko
 over to gecko or integrate them with gecko
 which is the main browser engine
 
 0:53:29.041,0:53:32.221
+就是为了提升性能
 for Firefox just to get those
 speed ups there as well
 
 0:53:32.221,0:53:37.031
+这真的很优雅，你可以关注一下
 and that's a neat neat thing
 you can be watching out for
 
 0:53:39.231,0:53:41.851
+以上就是所有问题了，嘿我们做到了，好耶
 That is all the questions, hey we did it. Nice
 
 0:53:41.851,0:53:50.751
+感谢来上我们的课，来年再见
 I guess thanks for taking the missing semester
 class and let's do it again next year
